@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./create.css">
+</head>
+<body>
+    <main>
+        <div class="left">
+            <div class="first">
+               <h1>Create an <span style="color:rgb(0, 88, 163)">L.DECOR Family</span> 
+                <br> Profile</h1>
+                <p>Already have an account? <a href="./login.html">Login</a> </p>
+            </div>
+            <div class="second">
+              
+                <div class="image-wrap">
+                    <div class="rect" style="background-image:url(https://www.ikea.com/in/en/profile/da397fb7ef6e6d94257db1af77290435.jpg)">1</div>
+                    <div class="rect" style="background-image:url(https://www.ikea.com/in/en/profile/281cff11b1bbb9d08737f5d656d7f8d6.jpg)">2</div>
+                    <div class="seq" style="background-image:url(https://www.ikea.com/in/en/profile/a620cf6567e1d802e42dad2d419da1a1.jpg)">3</div>
+                    <div class="rect" style="background-image:url(https://www.ikea.com/in/en/profile/558de95264a0f9501533593ab355259e.jpg)">4</div>
+                </div>
+               <div class="image-wrap">
+                <div class="seq" style="background-image:url(https://www.ikea.com/in/en/profile/5fdf8de127f0c602066c3aee7254c463.jpg)">5</div>
+                <div class="seq" style="background-image:url(https://www.ikea.com/in/en/profile/ddc28f908192eea06190ca5bf8657069.jpg)">6</div>
+                <div class="rect" style="background-image:url(https://www.ikea.com/in/en/profile/471c4b31a982119d5ad6018388835e64.jpg)">7</div>
+                <div class="seq" style="background-image:url(https://www.ikea.com/in/en/profile/3e48e8734c5c5751bd6b21045258bfac.jpg)">8</div>
+                <div class="rect" style="background-image:url(https://www.ikea.com/in/en/profile/6c9a5b763c764348260c1831ee856f56.jpg)">9</div>
+
+               </div>
+               
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+        <div class="center"></div>
+        <div class="right">
+            <div class="rightfirst">
+                <h3 style="width:400px">
+                    Become a member of IKEA Family today. Did we mention it's free to join?</h3>
+                    <input type="radio" name="yes" id="yes" checked="" ><label for="yes">Yes, I want to enjoy discounts, previews and a lot more! 
+                        Get the details.</label><br>
+                    <input type="radio" name="yes" id="no"><label for="yes">No thanks, I just want to create an IKEA account today. Maybe another day.
+                        Get the details
+                        </label>
+            </div>
+            <div class="signup">
+                <div class="signup-box">
+                    <form action="" id="form">
+                        <div class="user-box">
+                            <input type="text" name="Firstname" id="firstname" placeholder="Firstname"><span id="firstname_err"></span>
+                            
+                            <!-- <label for="">Firstname</label> -->
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="Surname" id="surname" placeholder="Surname">
+                            <!-- <label for="">Surname</label> -->
+                            <br>
+                            <span id="surname_err"></span>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="" id="mobile" placeholder="Mobile">
+                            <!-- <label for="">Mobile</label> -->
+                            <br>
+                            <span id="mobile_err"></span>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="" id="birthdate" placeholder="DD-MM-YYYY">
+                            <!-- <label for="">Birthdate</label> -->
+                            <br>
+                            <span id="birth_err"></span>
+                        </div>
+                        <div class="user-box">
+                           
+                            <select name="" id="gender">
+                                <option value="Gender">Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="other">other</option>
+                            </select>
+                            <br>
+                            <span id="gender_err"></span>
+                            <!-- <label for="">Gender</label> -->
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="" id="postcode" placeholder="Post Code">
+                            <!-- <label for="">Post Code</label> -->
+                            <br>
+                            <span id="post_err"></span>
+                        </div>
+                        <div class="user-box">
+                            <!-- <input type="text" name="" id="Preferred" placeholder="Preferred"> -->
+                                   <select name="" id="preferred">
+                                    <option value="preferred">Preferred</option>
+                                <option value="Hyderbad Store">Hyderbad Store</option>
+                                <option value="IKEA Bangalore Nagasandra">IKEA Bangalore Nagasandra</option>
+                                <option value="Navi Mumbai Store">Navi Mumbai Store</option>
+                                <option value="Online Store">Online Store</option>
+                                <option value="Worli">Worli</option>
+                                
+                            </select>
+
+                            <!-- <label for="">Preferred store</label> -->
+                            <br>
+                            <span id="pref_err"></span>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="" id="email" placeholder="Email(username)">
+                            <!-- <label for="">Email(username)</label> -->
+                            <br>
+                            <span id="email_err">.</span>
+                        </div>
+                        <div class="user-box">
+                            <input type="password" name="" id="password" placeholder="Password">
+                            <!-- <label for="">Password</label> -->
+                            <br>
+                            <span id="pass_err"></span>
+                        </div>
+
+                        <div >
+                            <input type="checkbox" name="" id="c0" class="check"><label for="">I would like to receive news, tips and marketing offers from IKEA.</label><br>
+                            <input type="checkbox" name="" id="c1" class="check"><label for="">Via email</label><br>
+                            <input type="checkbox" name="" id="c2"  class="check"><label for="">Via SMS</label><br>
+                            <input type="checkbox" name="" id="c3" class="check"><label for="">Via direct mail </label>
+                            <span id="checked_err"></span>
+                        </div>
+                        <input type="checkbox" name="" id="maincbox" class="check"><label for="">I have read and understood the Terms & Conditions and Privacy Policy.</label>
+                        <span id="main_err"></span>
+                        <br>
+                        <input class="submit" type="submit" value="Create Profile">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<script>
+    let form=document.getElementById("form")
+    let firstname=document.getElementById("firstname");
+    let surname=document.getElementById("surname");
+    let mobile=document.getElementById("mobile");
+    let birthdate=document.getElementById("birthdate");
+    let gender=document.getElementById("gender");
+    let postcode=document.getElementById("postcode");
+    let preferred=document.getElementById("preferred");
+    let email=document.getElementById("email");
+    let password=document.getElementById("password");
+
+   
+    let first_err=document.getElementById("firstname_err");
+    let surname_err=document.getElementById("surname_err");
+    let mobile_err=document.getElementById("mobile_err");
+    let birth_err=document.getElementById("birth_err");
+    let gender_err=document.getElementById("gender_err");
+    let post_err=document.getElementById("post_err");
+    let pref_err=document.getElementById("pref_err");
+    let email_err=document.getElementById("email_err");
+    let pass_err=document.getElementById("pass_err");
+  
+    let c0=document.getElementById("c0");
+    let c1=document.getElementById("c1");
+    let c2=document.getElementById("c2");
+    let c3=document.getElementById("c3");
+    let cerr=document.getElementById("checked_err");
+    let merr=document.getElementById("main_err");
+    let maincheck=document.getElementById("maincbox")
+
+    form.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        let data={
+            firstname:form.firstname.value,
+            surname:form.surname.value,
+            mobile:form.mobile.value,
+            birthdate:form.birthdate.value,
+            gender:form.gender.value,
+            postcode:form.postcode.value,
+            preferred:form.preferred.value,
+            email:form.email.value,
+            password:form.password.value
+        }
+        // fetchdata(data)
+        if(data.firstname!==""&&data.surname!==""&&data.mobile!==""&&data.birthdate!==""&&data.gender!==""&&data.postcode!==""&&data.email!==""&&data.preferred!==""&&data.password!==""&&c0.checked==true&&maincheck.checked==true){
+             first_err.innerHTML=null;
+             surname_err.innerHTML=null;
+             mobile_err.innerHTML=null;
+             birth_err.innerHTML=null;
+             gender_err.innerHTML=null;
+             post_err.innerHTML=null;
+             pref_err.innerHTML=null;
+             email_err.innerHTML=null;
+             pass_err.innerHTML=null;
+             firstname.style.borderBottomColor=null;
+             merr.innerHTML=null;
+             cerr.innerHTML=null
+             fetchdata(data)
+             console.log("ok")
+
+        }else{
+            data.firstname==""?(first_err.innerHTML="Your first name is required.",firstname.style.borderBottomColor="red"):first_err.innerHTML=null;
+            data.surname==""?(surname_err.innerHTML="Your Surname is required.",surname.style.borderBottomColor="red"):surname_err.innerHTML=null;
+            data.mobile==""?(mobile_err.innerHTML="Your Mobile is required.",mobile.style.borderBottomColor="red"):mobile_err.innerHTML=null;
+            data.birthdate==""?(birth_err.innerHTML="Your Birthdate is required.",birthdate.style.borderBottomColor="red"):birth_err.innerHTML=null;
+            data.gender==""?(gender_err.innerHTML="Your Gender is required.",gender.style.borderBottomColor="red"):gender_err.innerHTML=null;
+            data.postcode==""?(post_err.innerHTML="Your Post Code is required.",postcode.style.borderBottomColor="red"):post_err.innerHTML=null;
+            data.email==""?(email_err.innerHTML="Your Email is required.",email.style.borderBottomColor="red"):email_err.innerHTML=null;
+            data.preferred==""?(pref_err.innerHTML="Your preferred is required.",preferred.style.borderBottomColor="red"):pref_err.innerHTML=null;
+            data.password==""?(pass_err.innerHTML="Your Password is required.",password.style.borderBottomColor="red"):pass_err.innerHTML=null;
+             c0.checked==false?cerr.innerHTML="checked required":cerr.innerHTML=null;
+             maincheck.checked==false?merr.innerHTML="You must have read and accepted the Terms & Conditions and Privacy Policy":merr.innerHTML=null;
+        }
+        
+    })
+
+
+    function fetchdata(data){
+        fetch('https://63c6cd48d307b76967416f44.mockapi.io/userdata',{
+            method:"POST",
+            headers:{'Content-type':'application/json'},
+            body:JSON.stringify(data)
+        })
+        .then((res)=>res.json())
+        .then((data)=>console.log(data))
+    }
+
+
+   
+    c0.addEventListener("click",()=>{
+        if(c0.checked==true){
+            c0.checked=true;
+            c1.checked=true;
+            c2.checked=true;
+            c3.checked=true;
+        }else if(c0.checked==false){
+            c1.checked=false;
+            c2.checked=false;
+            c3.checked=false;
+        }
+        
+    })
+
+    c1.addEventListener("click",()=>{
+        if(c1.checked==true){
+            c0.checked=true; 
+        }  
+    })
+    c2.addEventListener("click",()=>{
+        if(c2.checked==true){
+            c0.checked=true; 
+        }  
+    })
+    c3.addEventListener("click",()=>{
+        if(c3.checked==true){
+            c0.checked=true; 
+        }  
+    })
+   
+</script>

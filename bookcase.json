@@ -1,0 +1,251 @@
+[
+    {
+        "id": "1",
+        "image": "https://www.ikea.com/in/en/images/products/lerberg-shelf-unit-dark-grey__69211_pe183961_s5.jpg?f=xxs",
+        "title": "EKET",
+        "description": "Shelving unit, black-brown/glass, 51x175 cm (20 1/8x68 7/8 ",
+        "price": "Rs.3,990",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "2",
+        "image": "https://www.ikea.com/in/en/images/products/lerberg-shelf-unit-dark-grey__69211_pe183961_s5.jpg?f=xxs",
+        "title": "LERBERG",
+        "description": "Shelf unit, dark grey, 60x148 cm (23 5/8x58 1/4",
+        "price": "Rs.2,490",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "3",
+        "image": "https://www.ikea.com/in/en/images/products/billy-bookcase-white__0625599_pe692385_s5.jpg?f=xxs",
+        "title": "BILLY ",
+        "description": "Bookcase, white, 80x28x202 cm (31 1/2x11x79 1/2",
+        "price": "Rs.6,990",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "4",
+        "image": "https://www.ikea.com/in/en/images/products/varby-corner-shelf-unit-medium-brown__0653925_pe708165_s5.jpg?f=xxs",
+        "title": "VARBY",
+        "description": "Corner shelf unit, medium brown, 53x155 cm (20 7/8x61 ",
+        "price": "Rs.3,990",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "5",
+        "image": "https://www.ikea.com/in/en/images/products/baggebo-shelving-unit-metal-white__0981562_pe815396_s5.jpg?f=xxs",
+        "title": "BAGGEBO",
+        "description": "Shelving unit, metal/white, 60x25x116 cm (23 5/8x9 7/8x45 5/8",
+        "price": "Rs.1,790",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "6",
+        "image": "https://www.ikea.com/in/en/images/products/hyllis-shelving-unit-in-outdoor__0639121_pe704408_s5.jpg?f=xxs",
+        "title": "HYLLIS  ",
+        "description": "Shelving unit, in/outdoor, 60x27x74 cm (23 5/8x10 5/8x29 1/8",
+        "price": "Rs.1,190",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "7",
+        "image": "https://www.ikea.com/in/en/images/products/billy-oxberg-bookcase-white__0641255_pe700390_s5.jpg?f=xxs",
+        "title": "BILLY / OXBERG ",
+        "description": "Bookcase, white, 80x30x202 cm (31 1/2x11 3/4x79 1/2 ",
+        "price": "Rs.14,990",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    }, {
+        "id": "8",
+        "image": "https://www.ikea.com/in/en/images/products/billy-bookcase-white__0627110_pe693186_s5.jpg?f=xxs",
+        "title": "BILLY ",
+        "description": "Bookcase, white, 40x28x106 cm (15 3/4x11x41 3/4",
+        "price": "Rs.2,290",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "9",
+        "image": "https://www.ikea.com/in/en/images/products/eket-wall-cabinet-with-glass-door-white-stained-oak-effect__0807257_pe770350_s5.jpg?f=xxs",
+        "title": "EKET",
+        "description": "Wall cabinet with glass door, white stained oak effect, 35x25x35 cm (13 3/4x9 7/8x13 3/4 ",
+        "price": "Rs.3,600",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "10",
+        "image": "https://www.ikea.com/in/en/images/products/kallax-shelving-unit-with-underframe-white-white__1041472_pe841046_s5.jpg?f=xxs",
+        "title": "KALLAX ",
+        "description": "Shelving unit with underframe, white/white, 147x164 cm (57 7/8x64 5/8",
+        "price": "Rs.14,990",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "11",
+        "image": "https://www.ikea.com/in/en/images/products/burhult-sibbhult-wall-shelf-white-white__0817489_pe774045_s5.jpg?f=xxs",
+        "title": "BURHULT / SIBBHULT ",
+        "description": "Wall shelf, white/white, 59x20 cm (23 1/4x7 7/8",
+        "price": "Rs.299",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "12",
+        "image": "https://www.ikea.com/in/en/images/products/bergshult-pershult-wall-shelf-combination-white-white__0771742_pe755769_s5.jpg?f=xxs",
+        "title": "BERGSHULT / PERSHULT ",
+        "description": "Wall shelf combination, white/white",
+        "price": "Rs.8,660",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "13",
+        "image": "https://www.ikea.com/in/en/images/products/eket-wall-mounted-cabinet-combination-white-light-grey-dark-grey__0665962_pe713344_s5.jpg?f=xxs",
+        "title": "EKET",
+        "description": "Wall-mounted cabinet combination, white/light grey/dark grey, 175x35x70 cm (68 7/8x13 3/4x27 1/2",
+        "price": "Rs.15,800",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "14",
+        "image": "https://www.ikea.com/in/en/images/products/hauga-high-cabinet-with-2-doors-white__0914112_pe783851_s5.jpg?f=xxs",
+        "title": "HAUGA ",
+        "description": "High cabinet with 2 doors, white, 70x199 cm (27 1/2x78 3/8",
+        "price": "Rs.14,990",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },{
+        "id": "15",
+        "image": "https://www.ikea.com/in/en/images/products/hoessla-book-end-white__1029067_pe835651_s5.jpg?f=xxs",
+        "title": "HÖSSLA",
+        "description": "Book-end, white",
+        "price": "99",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "16",
+        "image": "https://www.ikea.com/in/en/images/products/bergshult-krokshult-wall-shelf-brown-black-anthracite__0789724_pe764141_s5.jpg?f=l",
+        "title": " BERGSHULT / KROKSHULT ",
+        "description": "Wall shelf, brown-black/anthracite, 80x30 cm (31 1/2x11 3/4 ",
+        "price": "1,490",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "17",
+        "image": "https://www.ikea.com/in/en/images/products/billy-bookcase-white__0625599_pe692385_s5.jpg?f=xxs",
+        "title": "BILLY ",
+        "description": "Bookcase, white, 80x28x202 cm (31 1/2x11x79 1/2",
+        "price": "Rs.6,990",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "18",
+        "image": "kallax-linnmon-desk-combination-white__1090542_pe862079_s5.avif",
+        "title": "KALLAX / LINNMON",
+        "description": "Desk combination, white, 77x139x147 cm (30 3/8x54 3/4x57 7/8 ",
+        "price": "11,280",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "19",
+        "image": "https://www.ikea.com/in/en/images/products/svenshult-wall-shelf-with-storage-brown-red-white-stained-oak-effect__0670292_pe715430_s5.jpg?f=l",
+        "title": "SVENSHULT",
+        "description": "Wall shelf with storage, brown-red/white stained oak effect, 41x20 cm (16 1/8x7 7/8",
+        "price": "2,990",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "20",
+        "image": "https://www.ikea.com/in/en/images/products/hyllis-shelving-unit-in-outdoor__0639121_pe704408_s5.jpg?f=xxs",
+        "title": "HYLLIS  ",
+        "description": "Shelving unit, in/outdoor, 60x27x74 cm (23 5/8x10 5/8x29 1/8",
+        "price": "Rs.1,190",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "21",
+        "image": "https://www.ikea.com/in/en/images/products/kallax-shelving-unit-white__0644753_pe702937_s5.jpg?f=l",
+        "title": "KALLAX ",
+        "description": "Shelving unit, white, 77x77 cm (30 3/8x30 3/8",
+        "price": "4,990",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    }, {
+        "id": "22",
+        "image": "https://www.ikea.com/in/en/images/products/billy-bookcase-white__0627110_pe693186_s5.jpg?f=xxs",
+        "title": "BILLY ",
+        "description": "Bookcase, white, 40x28x106 cm (15 3/4x11x41 3/4",
+        "price": "2,290",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "23",
+        "image": "https://www.ikea.com/in/en/images/products/fjaellbo-shelving-unit-black__1071961_pe855055_s5.jpg?f=l",
+        "title": "FJÄLLBO ",
+        "description": "Shelving unit, black, 100x95 cm (39 3/8x37 3/8",
+        "price": "9,990",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "24",
+        "image": "https://www.ikea.com/in/en/images/products/kolbjoern-cabinet-in-outdoor-beige__0733033_pe718455_s5.jpg?f=l",
+        "title": "KOLBJÖRN ",
+        "description": "Cabinet in/outdoor, beige, 90x161 cm (35x63 ",
+        "price": "15,990",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "25",
+        "image": "https://www.ikea.com/in/en/images/products/burhult-sibbhult-wall-shelf-white-white__0817489_pe774045_s5.jpg?f=xxs",
+        "title": "BURHULT / SIBBHULT ",
+        "description": "Wall shelf, white/white, 59x20 cm (23 1/4x7 7/8",
+        "price": "Rs.299",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "26",
+        "image": "https://www.ikea.com/in/en/images/products/vittsjoe-storage-combination-black-brown-glass__0754493_pe747944_s5.jpg?f=l",
+        "title": "VITTSJÖ ",
+        "description": "Storage combination, black-brown/glass, 300x36x175 cm (118 1/8x14 1/8x68 7/8",
+        "price": "18,970",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "27",
+        "image": "https://www.ikea.com/in/en/images/products/rejsa-box-grey-green-metal__0812518_pe772036_s5.jpg?f=l",
+        "title": "REJSA ",
+        "description": "Box, grey-green/metal, 32x35x32 cm (12 ½x13 ¾x12 ½",
+        "price": "1,290",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "28",
+        "image": "https://www.ikea.com/in/en/images/products/eket-wall-mounted-storage-combination-multicolour-light-green__1028624_pe835421_s5.jpg?f=l",
+        "title": "EKET ",
+        "description": "Wall-mounted storage combination, multicolour/light green",
+        "price": "10,500",
+        "tax": "Price incl. of all taxes",
+        "rating": "⭐⭐⭐⭐"
+    }
+]
