@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <main class="container">
+        <div class="left">
+           <div class="first">
+            <a href="">◀️</a>
+            <img src="./Ldecor.final.png" alt="">
+           </div>
+           <div class="leftspace"></div>
+           <div class="mid">
+            <h1><span style="color:yellow"> Login</span>
+                to your IKEA account.</h1>
+            <p>Too many passwords?<br>
+                You can now login with an OTP we will send on your email address or verified mobile number.
+                <br>
+                <br>
+                Access your IKEA account using your email address to add and verify your mobile number.
+            </p>
+           </div>
+            <div class="leftspace"></div>
+           <div class="last">
+            <span>L.Decor.in</span>
+            <span>Cookie Policy</span>
+            <span>and</span>
+            <span>Privacy Policy</span>
+            <div class="lastdata">
+                © Inter IKEA Systems B.V. 1999-2023
+            </div>
+           </div>
+        </div>
+        <div class="center"></div>
+        <div class="right">
+            <div class="rightspace"></div>
+            <div class="loginpart">
+                <div class="sectionloginpart">
+
+                   <form action="" id="form">
+                    <label for="">Email or Verified Mobile number</label><br>
+                    <input type="text" class="form-input" name="email" id="email" ><br>
+                    <span id="email_err"></span><br>
+                    <span >Login</span><a href=""></a>
+                    <div class="formspace"></div>
+                    <label for="">Password</label><br>
+                    <input type="password" class="form-input" name="password" id="password" ><br>
+                    <span id="pass_err"></span><br>
+                    <a href="">Forgot your password?</a>
+                    <br>
+                    <br>
+                    <input class="submittext"type="submit" value="Continue">
+
+                </form> 
+                </div>
+                
+            </div>
+            <div class="rightspace"></div>
+            <div class="create">
+                <h3>Do not have an IKEA account? Create one now:</h3>
+                <br>
+                <br>
+                <a href="./create.html">
+                    <button class="btn">I'm buying for my home</button>
+                </a>
+                
+                <br>
+                <br>
+                <button class="btn">I'm buying for my company</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<script>
+let form =document.getElementById("form");
+
+let email=document.getElementById("email");
+    let password=document.getElementById("password");
+
+let email_err=document.getElementById("email_err");
+    let pass_err=document.getElementById("pass_err");
+form.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let user={
+        email:form.email.value,
+        password:form.password.value
+    }
+    if(user.email!==""&&user.password!==""){
+        email_err.innerHTML=null;
+        pass_err.innerHTML=null;
+        fetchdata(user)
+    }else{
+        user.email==""?(email_err.innerHTML="Your Email is required.",email.style.border="red"):email_err.innerHTML=null;
+         user.password==""?(pass_err.innerHTML="Your Password is required.",password.style.border="red"):pass_err.innerHTML=null;
+    }
+
+})
+
+
+function fetchdata(user){
+    fetch('https://63c6cd48d307b76967416f44.mockapi.io/userdata')
+    .then((res)=>res.json())
+    .then((data)=>{
+        console.log(data)
+        let flag=false;
+         let element=""
+        data.forEach((el)=>{
+          if(el.email==user.email&&el.password==user.password){
+            flag=true;
+           element=el;
+
+        }  
+        })
+        
+        if(flag==true){
+            alert(`${element.firstname} ${element.surname}`)
+        }else{
+            
+        
+           pass_err.innerHTML="Wrong password"
+            
+        }
+    })
+}
+</script>
