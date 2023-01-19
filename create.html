@@ -8,7 +8,41 @@
     <link rel="stylesheet" href="./create.css">
 </head>
 <body>
-    <main>
+    
+    <p style="background-color: black; color: white; text-align: center; padding-bottom: 7px; margin-bottom: 5px;"> <img
+        src="./image/icons8-bus-64.png" style="height: 25px; margin-right: 5px;" alt=""> Get 20% off* on delivery
+    charges - limited period offer!</p>
+
+<div id="navall">
+    <nav id="secondnav">
+        <img id="menunavimg" src="./image/icons8-menu-rounded-30.png" style="width: 35px; height: 40px; position: fixed;" alt="">
+        <img src="./image/DECOR.png"
+            style="height: 60px; width: 110px; border-radius: 7px;margin-right: 120px; margin-left: 130px;" alt="">
+        <div class="box">
+            <img src="./image/icons8-search-16.png" alt="">
+            <input type="text">
+        </div>
+        <a id="login"href="./login.html">
+        <div class="box secondbox">
+            <img src="./image/icons8-user-male-64.png" alt="">
+            <h3>Hej! Log in or sign up</h3>
+        </div>
+         </a>
+        <img src="./image/icons8-shuttle-bus-50.png" style="width: 40px; height: 40px;" alt="">
+        <img src="./image/icons8-add-to-cart-64.png" style="width: 40px; height: 35px;" alt="">
+    </nav>
+
+    <nav id="thirdnav">
+        <h3 id="product">Products</h3>
+        <h3>Rooms</h3>
+        <h3 >New at L.DECOR</h3>
+        <h3>Offers</h3>
+    </nav>
+</div>
+
+
+                    <!--                     main section         -->
+    <div class="maincontainer">
         <div class="left">
             <div class="first">
                <h1>Create an <span style="color:rgb(0, 88, 163)">L.DECOR Family</span> 
@@ -44,10 +78,10 @@
         <div class="right">
             <div class="rightfirst">
                 <h3 style="width:400px">
-                    Become a member of IKEA Family today. Did we mention it's free to join?</h3>
+                    Become a member of L.DECOR Family today. Did we mention it's free to join?</h3>
                     <input type="radio" name="yes" id="yes" checked="" ><label for="yes">Yes, I want to enjoy discounts, previews and a lot more! 
                         Get the details.</label><br>
-                    <input type="radio" name="yes" id="no"><label for="yes">No thanks, I just want to create an IKEA account today. Maybe another day.
+                    <input type="radio" name="yes" id="no"><label for="yes">No thanks, I just want to create an L.DECOR account today. Maybe another day.
                         Get the details
                         </label>
             </div>
@@ -55,7 +89,8 @@
                 <div class="signup-box">
                     <form action="" id="form">
                         <div class="user-box">
-                            <input type="text" name="Firstname" id="firstname" placeholder="Firstname"><span id="firstname_err"></span>
+                            <input type="text" name="Firstname" id="firstname" placeholder="Firstname"><br>
+                            <span id="firstname_err"></span>
                             
                             <!-- <label for="">Firstname</label> -->
                         </div>
@@ -72,7 +107,7 @@
                             <span id="mobile_err"></span>
                         </div>
                         <div class="user-box">
-                            <input type="text" name="" id="birthdate" placeholder="DD-MM-YYYY">
+                            <input type="date"  name="" id="birthdate" >
                             <!-- <label for="">Birthdate</label> -->
                             <br>
                             <span id="birth_err"></span>
@@ -100,7 +135,7 @@
                                    <select name="" id="preferred">
                                     <option value="preferred">Preferred</option>
                                 <option value="Hyderbad Store">Hyderbad Store</option>
-                                <option value="IKEA Bangalore Nagasandra">IKEA Bangalore Nagasandra</option>
+                                <option value="IKEA Bangalore Nagasandra">L.DECOR Bangalore Nagasandra</option>
                                 <option value="Navi Mumbai Store">Navi Mumbai Store</option>
                                 <option value="Online Store">Online Store</option>
                                 <option value="Worli">Worli</option>
@@ -125,10 +160,18 @@
                         </div>
 
                         <div >
-                            <input type="checkbox" name="" id="c0" class="check"><label for="">I would like to receive news, tips and marketing offers from IKEA.</label><br>
-                            <input type="checkbox" name="" id="c1" class="check"><label for="">Via email</label><br>
+                         <input type="checkbox" name="" id="c0" class="check"><label for="">I would like to receive news, tips and marketing offers from L.DECOR.</label><br>
+                            <div class="check-section">
+                                <div class="checkbox_p1"></div>
+                                <div class="checkbox_p">
+                             <input type="checkbox" name="" id="c1" class="check"><label for="">Via email</label><br>
                             <input type="checkbox" name="" id="c2"  class="check"><label for="">Via SMS</label><br>
                             <input type="checkbox" name="" id="c3" class="check"><label for="">Via direct mail </label>
+                                </div>
+                                
+                            </div>
+                           
+                           
                             <span id="checked_err"></span>
                         </div>
                         <input type="checkbox" name="" id="maincbox" class="check"><label for="">I have read and understood the Terms & Conditions and Privacy Policy.</label>
@@ -139,7 +182,93 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+    <footer id="footer">
+        <div id="footerfirst">
+            <h3>Join L.DECOR Family</h3>
+            <p>Enjoy guaranteed discounts, special previews, food offers and much more. Sign up today - it’s free and only takes a minute to join.</p>
+            <button>Join the club</button>
+            <h3>L.DECOR for Business</h3>
+            <p>Our business & design experts help you with flexible, affordable and sustainable solutions. Create a better life at work with us.</p>
+            <button>Join now</button>
+        </div>
+        <div id="footersecond">
+            <table>
+                <thead>
+                    <tr>
+                      <th>L.DECOR  Family</th>
+                      <th>Services</th>
+                      <th>Help</th>
+                      <th>About L.DECOR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Log in</td>
+                        <td>Design Your Room</td>
+                        <td>How to shop</td>
+                        <td>This is L.DECOR</td>
+                    </tr>
+                    <tr>
+                        <td>Join L.DECOR group</td>
+                        <td>Delivery Service</td>
+                        <td>Return policy</td>
+                        <td>Working at L.DECOR</td>
+                    </tr>
+                    <tr>
+                        <td>Member offers</td>
+                        <td>Installation Service</td>
+                        <td>Price and price tags</td>
+                        <td>Newsroom</td>
+                    </tr>
+                    <tr>
+                        <td>Workshops & Events</td>
+                        <td>Assembly Service</td>
+                        <td>Contact us</td>
+                        <td>Sustainability</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kitchen Planning</td>
+                        <td>FAQ's</td>
+                        <td>L.DECOR Stores</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Measuring Service</td>
+                        <td>Planners</td>
+                        <td>L.DECOR Restaurant</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Customer Service</td>
+                        <td>Size guide-Beds & mattresses</td>
+                        <td>L.DECOR for Business</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Recycle Program</td>
+                        <td>Buying guides</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Track Your Order</td>
+                        <td>Gift Card</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="">Click & collect</a></td>
+                        <td>Feedback</td>
+                        <td></td>
+                    </tr>
+                  
+                </tbody>
+            </table>
+        </div>
+
+    </footer>
 </body>
 </html>
 <script>
@@ -187,7 +316,7 @@
             password:form.password.value
         }
         // fetchdata(data)
-        if(data.firstname!==""&&data.surname!==""&&data.mobile!==""&&data.birthdate!==""&&data.gender!==""&&data.postcode!==""&&data.email!==""&&data.preferred!==""&&data.password!==""&&c0.checked==true&&maincheck.checked==true){
+        if(data.firstname!==""&&data.surname!==""&&data.mobile!==""&&data.birthdate!==""&&data.gender!==""&&data.postcode!==""&&data.email!==""&&data.preferred!==""&&data.password!==""&&c0.checked==true&&maincheck.checked==true&&data.password.length>=8){
              first_err.innerHTML=null;
              surname_err.innerHTML=null;
              mobile_err.innerHTML=null;
@@ -201,20 +330,22 @@
              merr.innerHTML=null;
              cerr.innerHTML=null
              fetchdata(data)
+             alert("Your profile is created Succesfully")
              console.log("ok")
 
         }else{
-            data.firstname==""?(first_err.innerHTML="Your first name is required.",firstname.style.borderBottomColor="red"):first_err.innerHTML=null;
-            data.surname==""?(surname_err.innerHTML="Your Surname is required.",surname.style.borderBottomColor="red"):surname_err.innerHTML=null;
-            data.mobile==""?(mobile_err.innerHTML="Your Mobile is required.",mobile.style.borderBottomColor="red"):mobile_err.innerHTML=null;
-            data.birthdate==""?(birth_err.innerHTML="Your Birthdate is required.",birthdate.style.borderBottomColor="red"):birth_err.innerHTML=null;
-            data.gender==""?(gender_err.innerHTML="Your Gender is required.",gender.style.borderBottomColor="red"):gender_err.innerHTML=null;
-            data.postcode==""?(post_err.innerHTML="Your Post Code is required.",postcode.style.borderBottomColor="red"):post_err.innerHTML=null;
-            data.email==""?(email_err.innerHTML="Your Email is required.",email.style.borderBottomColor="red"):email_err.innerHTML=null;
-            data.preferred==""?(pref_err.innerHTML="Your preferred is required.",preferred.style.borderBottomColor="red"):pref_err.innerHTML=null;
-            data.password==""?(pass_err.innerHTML="Your Password is required.",password.style.borderBottomColor="red"):pass_err.innerHTML=null;
-             c0.checked==false?cerr.innerHTML="checked required":cerr.innerHTML=null;
-             maincheck.checked==false?merr.innerHTML="You must have read and accepted the Terms & Conditions and Privacy Policy":merr.innerHTML=null;
+            data.firstname==""?first_err.innerHTML="*Your first name is required.":first_err.innerHTML=null;
+            data.surname==""?surname_err.innerHTML="*Your Surname is required.":surname_err.innerHTML=null;
+            data.mobile==""?mobile_err.innerHTML="*Your Mobile is required.":mobile_err.innerHTML=null;
+            data.birthdate==""?birth_err.innerHTML="*Your Birthdate is required.":birth_err.innerHTML=null;
+            data.gender==""?gender_err.innerHTML="*Your Gender is required.":gender_err.innerHTML=null;
+            data.postcode==""?post_err.innerHTML="*Your Post Code is required.":post_err.innerHTML=null;
+            data.email==""?email_err.innerHTML="*Your Email is required.":email_err.innerHTML=null;
+            data.preferred==""?pref_err.innerHTML="*Your preferred is required.":pref_err.innerHTML=null;
+            data.password==""?pass_err.innerHTML="*Your Password is required.":pass_err.innerHTML=null;
+            data.password<8?pass_err.innerHTML="*Password length should be greater than or eual to 8.":pass_err.innerHTML=null;
+             c0.checked==false?cerr.innerHTML="*At least one checked required":cerr.innerHTML=null;
+             maincheck.checked==false?merr.innerHTML="*You must have read and accepted the Terms & Conditions and Privacy Policy":merr.innerHTML=null;
         }
         
     })
@@ -227,7 +358,11 @@
             body:JSON.stringify(data)
         })
         .then((res)=>res.json())
-        .then((data)=>console.log(data))
+        .then((data)=>{
+            console.log(data) 
+           
+            location.href="./login.html"
+        })
     }
 
 
