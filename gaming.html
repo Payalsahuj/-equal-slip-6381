@@ -4,7 +4,6 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
       <title>Gaming furniture</title>
       <style>
 
@@ -55,20 +54,19 @@
                  border: 1px solid black;
                  margin:1px;
             }
+            .filterProduct{
+                  width: 100%;
+            }
              #filter_icon{
                   width: 90%;
                   margin: auto;
                   margin-left: 8%;
-                  height: 100px;
-                  background-color: aqua;
              }
              #showing_data{
                   width: 90%;
                   margin: auto;
                   margin-left: 8%;
                   margin-top:10px;
-                  height: 1000px;
-                  background-color: rgb(9, 255, 0);
              }
              #page_view{
                   margin: auto;
@@ -433,15 +431,63 @@ font-size: small;
       <h2>Gaming setups that support you while you conquer alternate worlds</h2>
       <p>The best gaming chair helps you forget where you are seated. Our gaming chairs keep you so well supported that you can immerse yourself in gameplay for long hours without feeling any discomfort. Our gaming desks comfortably house all your equipment while also being comfortable to use. </p>
        </div>
-       <!-- products right side switch -->
-       <div id="products_show">
-            <span>60 items</span>
-           <button>Products</button>
-           <button>Room</button>
-       </div>
+       
        <!-- filter   function -->
        <div id="filter_icon">
-            <hr>
+            <div class="filterProduct">
+                  <div>
+                   <div>
+                       <select name="Sort" id="sort">
+                           <option value="">Sort</option>
+                           <option value="bestMatch">Best match</option>
+                           <option value="lth">Price: low to high</option>
+                           <option value="htl">Price: high to low</option>
+                           <option value="rating">Customer rating</option>
+                           <option value="name">Name</option>
+                           <option value="popular">Most popular</option>
+                           <option value="width">Width</option>
+                           <option value="height">Height</option>
+                           <option value="depth">Depth</option>
+                        </select>
+                      </div>
+                      <div>
+                       <select name="category" id="category">
+                           <option value="">Category</option>
+                           <option value="book">Bookcase</option>
+                           <option value="shelv">Shelving units</option>
+                           <option value="pantry">Pantry</option>
+                       </select>
+                      </div>
+                      <div>
+                       <select name="size" id="size">
+                           <option value="">Size</option>
+                           <optgroup label="Width">
+                           </optgroup>
+                           <optgroup label="Height"></optgroup>
+                           <optgroup label="Depth"></optgroup>
+                       </select>
+                      </div>
+                      <div>
+                       <select name="price" id="price">
+                           <option value="">Price</option>
+                           <option value="1999">₹0 - 1,999</option>
+                           <option value="2-4">₹2,000 - 3,999</option>
+                           <option value="4-6">₹4,000 - 5,999</option>
+                           <option value="6-8">₹6,000 - 7,999</option>
+                           <option value="8">₹8,000+</option>
+                       </select>
+                      </div>
+                      <div>
+                       <button id="allFilter">All filter</button>
+                      </div>
+                  </div>
+                  <div>
+                   <button id="productFilter">Product</button>
+                   <button id="roomFilter">Room</button>
+                  </div>
+                  
+               </div>
+               <hr>
        </div>
        <!-- showing products by JSON OR API -->
 <div id="showing_data">
@@ -697,3 +743,6 @@ font-size: small;
 
 </body>
 </html>
+<script src="gaming.js">
+ 
+</script>
