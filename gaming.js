@@ -1,11 +1,12 @@
-// getting main section for procduct
-let productPage = document.querySelector(".shelvProduct");
+
+   // getting main section for procduct
+let productPage = document.querySelector("#showing_data");
 
 // Product data to access golbally
 let globalData=[];
 
 // fetching product data
-fetch("bookShelv.json")
+fetch("gaming.json")
 .then((res)=>res.json())
 .then((data)=>{
     globalData = data;
@@ -16,7 +17,7 @@ fetch("bookShelv.json")
 function renderProduct(data){
       let cardList=`
           <div class="cardList">
-           ${data.map((item)=>productCard(item.image1,item.title,item.description1,item.price,item.rating[0],item.rating[1])).join('')}
+           ${data.map((item)=>productCard(item.first_image,item.tittle,item.des,item.cost,item.rating,item.review)).join('')}
           </div>
       `
       productPage.innerHTML=cardList;
@@ -36,6 +37,3 @@ function productCard(image,title,des,price,rating,rCount){
     `
     return card;
 }
-// hovering image on product display page ---------------------------------------------------------------------
-
-

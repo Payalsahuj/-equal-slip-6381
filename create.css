@@ -1,0 +1,161 @@
+body{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+
+.signup{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    /* background: linear-gradient(#141e30,#243b55); */
+}
+
+
+/* .signup-box{
+    position: absolute;
+    top:0%;
+    left:0%;
+    width:900px;
+    padding:40px;
+    transform: translate(0%,0%);
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    
+} */
+
+.user-box {
+    position:relative;
+    margin-bottom: 20px;
+}
+
+
+.user-box input{
+    width:80%;
+    padding:10px 0px;
+    font-size:16px;
+    color:black;
+    /* margin-bottom: 30px; */
+    border:none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background: transparent;
+}
+/* .user-box label{
+    position:absolute;
+   top:30%;
+    left:0%;
+    padding:5px 0px;
+    font-size:16px;
+    color:black;
+    pointer-events:none;
+    transition: .5s;
+   border:1px solid blue
+}
+ .user-box input:focus ~ label, .user-box input:valid ~ label{
+    top:-20%;
+    left:0;
+    color:red;
+    font-size: 8px;
+} */
+
+
+
+main{
+    display:flex;
+    width:100%;
+}
+.left{
+    width:40%;
+}
+.center{
+    width:20%;
+
+}
+.right{
+    width:50%;
+}
+.second{
+    display: flex;
+    width:100%;
+}
+.image-wrap{
+    width:80%;
+}
+.image-wrap div {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+}
+
+.seq {
+    height: 12rem;
+}
+.rect{
+    height:16rem;
+}
+#form span{
+    color:red;
+    font-size:8px;
+}#yes,#no{
+width: 25px;
+height: 25px;
+accent-color: black;
+margin-right: 10px;
+}
+.rightfirst{
+    margin-bottom: 30px;
+}
+.check{
+    width: 25px;
+height: 25px;
+accent-color: black;
+border: 2px solid black;
+}
+
+#gender,#preferred{
+    width:200px;
+    height:40px;
+    border:none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color:grey
+}
+
+#gender option ,#preferred option {
+    width:200px;
+    height:40px;
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color:rgb(12, 11, 11)
+}
+
+.user-box input:focus {
+    top:-40;
+    border:none;
+    border-bottom: 4px solid blue;
+    outline: none;
+    background: transparent;
+    font-size: 12px;
+   
+} 
+.submit{
+    margin-top:30px;
+    font-size: 20px;
+    width:80%;
+    height:50px;
+    border-radius: 20px;
+    color:white;
+    background-color: black;
+}
