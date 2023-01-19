@@ -1,0 +1,112 @@
+.main-div{
+    display: flex;
+    width: 58%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 25px;
+    
+}
+.main-div > .left-div{
+display: flex;
+}
+
+.heading>  h3 {
+        text-align: center;
+        font-size: 28px;
+}
+.main-div > .right-div{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 170px;
+}
+
+.main-div > .left-div >.left{
+    display: flex;
+    flex-flow: column;
+    
+    }
+.heading > {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 62px;
+}  
+.main-div > .left-div img{
+  width: 136px;
+}
+.main-div > .right-div > div:nth-of-type(1){
+
+    font-size: 118%;
+}
+
+
+
+.main-div > .right-div > div:nth-of-type(2) button {
+
+    display: inline-block;
+    width: 100%;
+    max-width: 352px;
+    height: 40px;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: .8125rem;
+    line-height: 37px;
+    font-family: inherit;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    background: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-clip: padding-box;
+    overflow: visible;
+    color: #444;
+    border-color: #666;
+}
+
+
+.main-div > .right-div > div:nth-of-type(2) select{
+    width: 100%;
+    max-width: 352px;
+    height: 40px;
+    margin: 0;
+    padding: 0 10px;
+    border: 1px solid #666;
+    border-radius: 2px;
+    background: #fff url(https://order.ikea.com/in/en/checkout/static/media/chevron-down-thin-24.1667eab2.svg) no-repeat right 8px center/1.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1rem;
+    line-height: 1.15;
+    font-family: inherit;
+    text-transform: none;
+}
+
+.main-div > .right-div > div:nth-of-type(2) img{
+    width: 28px;
+}
+.main-div > .right-div > div:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.sel-div{
+    width: 65%;
+}
+
+#title,.total{
+    font-size: 18px;
+    font-weight: 700;
+}
