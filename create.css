@@ -1,6 +1,7 @@
-body{
+.maincontainer{
     padding-left: 50px;
     padding-right: 50px;
+    display: flex;
 }
 
 
@@ -117,10 +118,11 @@ margin-right: 10px;
 height: 25px;
 accent-color: black;
 border: 2px solid black;
+margin-top:20px;
 }
 
 #gender,#preferred{
-    width:200px;
+    width:40%;
     height:40px;
     border:none;
     border-bottom: 2px solid black;
@@ -158,4 +160,122 @@ border: 2px solid black;
     border-radius: 20px;
     color:white;
     background-color: black;
+}
+.check-section{
+    display: flex;
+}
+.checkbox_p1{
+    width:40px;
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#footerfirst{
+   width: 35%;
+   text-align: justify;
+   padding-left: 145px;
+   font-size: 17px;
+   padding-top: 10px;
+}
+#footerfirst p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#footerfirst button{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-radius: 16px;
+    font-size: 17px;
+    background-color: #0288D1;
+    color: white;
+    border: none;
+    width: 120px;
+}
+#footerfirst button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#footersecond{
+    width: 65%;
+    padding-left: 50px;
+}
+#footersecond table{
+   text-align: justify;
+    width: 100%;
+    text-align: left;
+    font-size: 17px;
+}
+#footersecond thead{
+    font-size: 20px;
+}
+#footersecond table td,th{
+    padding: 10px 0px;;
+}
+td a{
+    text-decoration: none;
+}
+#login{
+    color: black;
+    text-decoration: none;
+}
+   /* nav */
+   #secondnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.box {
+    width: 600px;
+    height: 8px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(226, 229, 233);
+}
+
+.box>img {
+    font-size: 20px;
+    width: 27px;
+    padding-right: 10px;
+}
+
+.box>input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+
+    background-color: rgb(226, 229, 233);
+}
+
+.secondbox {
+    width: 265px;
+    background-color: white;
+}
+
+.secondbox:hover {
+    background-color: rgb(226, 229, 233);
+    cursor: pointer;
+}
+
+#thirdnav {
+    padding-left: 150px;
+    margin-top: 20px;
+    display: flex;
+   
+}
+#thirdnav h3:hover{
+    cursor: pointer;
+}
+#thirdnav h3{
+    margin-right: 40px;
 }

@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./login.css">
+    <script src="https://kit.fontawesome.com/af84249d9e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main class="container">
         <div class="left">
            <div class="first">
-            <a href="">◀️</a>
-            <img src="./Ldecor.final.png" alt="">
+            <a href=""><img src="./image/icons8-left-arrow-96.png" alt=""></a>
+            <img src="./image/DECOR.png" alt="">
            </div>
            <div class="leftspace"></div>
            <div class="mid">
@@ -46,7 +47,7 @@
                     <label for="">Email or Verified Mobile number</label><br>
                     <input type="text" class="form-input" name="email" id="email" ><br>
                     <span id="email_err"></span><br>
-                    <span >Login</span><a href=""></a>
+                    <!-- <span >Login</span><a href=""></a> -->
                     <div class="formspace"></div>
                     <label for="">Password</label><br>
                     <input type="password" class="form-input" name="password" id="password" ><br>
@@ -96,8 +97,8 @@ form.addEventListener("submit",(e)=>{
         pass_err.innerHTML=null;
         fetchdata(user)
     }else{
-        user.email==""?(email_err.innerHTML="Your Email is required.",email.style.border="red"):email_err.innerHTML=null;
-         user.password==""?(pass_err.innerHTML="Your Password is required.",password.style.border="red"):pass_err.innerHTML=null;
+        user.email==""?email_err.innerHTML="Your Email is required.":email_err.innerHTML=null;
+         user.password==""?pass_err.innerHTML="Your Password is required.":pass_err.innerHTML=null;
     }
 
 })
@@ -109,17 +110,20 @@ function fetchdata(user){
     .then((data)=>{
         console.log(data)
         let flag=false;
-         let element=""
+         let detail=""
         data.forEach((el)=>{
           if(el.email==user.email&&el.password==user.password){
             flag=true;
-           element=el;
+           detail=el;
 
         }  
         })
         
         if(flag==true){
-            alert(`${element.firstname} ${element.surname}`)
+            localStorage.setItem("userdata",JSON.stringify(detail))
+            alert(`Hello ${detail.firstname} ${detail.surname} ! ${'\n'} Your have Login Succesfully`)
+            
+            location.href="./landpage.html"
         }else{
             
         
