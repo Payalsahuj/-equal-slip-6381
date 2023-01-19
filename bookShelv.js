@@ -31,7 +31,7 @@ function productCard(image,title,des,price,rating,rCount){
               <p>${des}</p>
               <h4>${price}</h4>
               <div><p>${rating}</p><p>${rCount}</p></div>
-              <img class="cart" width="20px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOgHgux1FcliEwcchIku5zqsCi3szjkGKk_r8A0Npc3_J4y9HkxDRbb7zqT-bKlW7EOw&usqp=CAU">
+              <div class="addCart">🤍</div>
          </div>
     `
     return card;
