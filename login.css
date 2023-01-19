@@ -53,7 +53,7 @@ body{
    color:white;
 }
 .form-input{
-    width:400px;
+    width:60%;
     height: 50px;
    border-radius: 10px;
   
@@ -68,13 +68,13 @@ body{
 }
 
 .btn{
-    width:400px;
+    width:60%;
     height:50px;
     border-radius: 20px;
  
 }
 .submittext{
-    width:400px;
+    width:60%;
     height: 50px;
    border-radius: 10px;
    color:white;
