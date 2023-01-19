@@ -19,7 +19,7 @@
         }
 
         .box {
-            width: 60%;
+            width: 45%;
             height: 8px;
             background-color: white;
             border-radius: 30px;
@@ -496,6 +496,7 @@
             top:0%;
             width: 500px;
             background-color:white;
+            display: none;
         }
         #leftslidermenudetails{
             height: 100%;
@@ -524,10 +525,20 @@
             border: none;
         }
         #firstdiv h3{
-            margin: 20px 10px;
+            margin: 35px 30px;
         }
         #seconddiv{
-            height:50%;
-            
+            height:50%; 
+        }
+        #seconddiv a{
+            display: block;
+            margin-top: 20px;
+            margin: 35px 32px;
+           text-decoration: none;
+           color: black;
+        }
+        #seconddiv a:hover{
+            text-decoration: underline;
+            cursor: pointer;   
         }
     
