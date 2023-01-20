@@ -14,9 +14,29 @@ body{
     width:45%;
    padding:10px;
 }
-.first>img{
+.first{
+    display: flex;
+    
+}
+.iconimg{
     width:100px;
     height: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color:blue;
+    font-size: larger;
+    font-weight: bold;
+    border: 2px solid white;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 30px;
+    background: white;
+
+}
+.leftarrow{
+    margin-top: 20px;
+    width:30px;
+    height:30px;
 }
 #form label{
   font-size: 20px;
@@ -55,9 +75,19 @@ body{
 .form-input{
     width:60%;
     height: 50px;
+    font-size: 16px;
    border-radius: 10px;
   
 }
+.form-input:focus {
+    top:-40;
+    border:none;
+    border-bottom: 4px solid blue;
+    outline: none;
+    background: palegoldenrod;
+    font-size: 18px;
+   
+} 
 .formspace{
     height:30px;
 }
@@ -71,7 +101,7 @@ body{
     width:60%;
     height:50px;
     border-radius: 20px;
- 
+    cursor: pointer;
 }
 .submittext{
     width:60%;
@@ -79,7 +109,7 @@ body{
    border-radius: 10px;
    color:white;
    background-color: rgb(0, 88, 163);
-  
+   cursor: pointer;
    font-size: 25px;
 
 }

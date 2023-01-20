@@ -103,12 +103,14 @@ main{
 }
 #form span{
     color:red;
-    font-size:8px;
+    font-size:10px;
+    font-weight: bold;
 }#yes,#no{
 width: 25px;
 height: 25px;
 accent-color: black;
 margin-right: 10px;
+cursor: pointer;
 }
 .rightfirst{
     margin-bottom: 30px;
@@ -119,6 +121,7 @@ height: 25px;
 accent-color: black;
 border: 2px solid black;
 margin-top:20px;
+cursor: pointer;
 }
 
 #gender,#preferred{
@@ -160,12 +163,14 @@ margin-top:20px;
     border-radius: 20px;
     color:white;
     background-color: black;
+    cursor: pointer;
 }
 .check-section{
     display: flex;
 }
 .checkbox_p1{
     width:40px;
+    
 }
 
 #footer{
