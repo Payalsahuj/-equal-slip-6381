@@ -3,6 +3,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            /* font-style: italic; */
         }
         html, body{
             /* overflow-x: hidden; */
@@ -56,7 +57,7 @@
         }
 
         #thirdnav {
-            padding-left: 150px;
+            padding-left: 10%;
             margin-top: 20px;
             display: flex;
            
@@ -65,7 +66,7 @@
             cursor: pointer;
         }
         #thirdnav h3{
-            margin-right: 40px;
+            margin-right: 4%;
         }
         
         #main{
@@ -77,7 +78,6 @@
         }
         #percentage {
             width: 90%;
-            
             padding-top: 60px;
            
         }
@@ -253,6 +253,10 @@
             display: flex;
             padding: 10px 0px;
         }
+        #six img{
+            display: block;
+            width: 100%;
+        }
         #six button{
             margin-top: 10px;
             border-radius: 14px;
@@ -293,6 +297,7 @@
             display: flex;
             width: 100%;
             margin-top: 40px;
+            background-color: #f5f5f5;
             box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         }
         #footerfirst{
@@ -343,6 +348,19 @@
         #login{
             color: black;
             text-decoration: none;
+        }
+        #loginbtn{
+            border: 2px solid white;
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            font-weight: 800;
+            padding: 7px 20px;
+            border-radius: 18px;
+        }
+        #loginbtn:hover{
+            cursor: pointer;
+            transform: scale(1.1);
         }
         .sidebarmenu{
             height: 100%;
@@ -540,5 +558,123 @@
         #seconddiv a:hover{
             text-decoration: underline;
             cursor: pointer;   
+        }
+
+        #imgdetail{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+          
+            gap: 15px;
+            margin-top: 40px;
+        }
+        #imgdetail div{
+            display:flex;
+            flex-wrap: wrap;
+            
+        }
+        #imgdetail div img{
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+        }
+        #showmorediv{
+            margin-top: 30px; 
+            text-align: center;
+        }
+        #showmorebtn{
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 17px;
+            border: none;
+            background-color: #0288D1;
+        }
+        #showmorebtn:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        @media screen and (min-width:700px) and (max-width: 900px){
+            #imgdetail{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 15px;
+                margin-top: 40px;
+            }
+            #six{
+                display: flex;
+                flex-direction: column;
+                padding: 10px 0px;
+                gap:30px;
+            }
+            #sevenchild{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap:30px; 
+            }
+            #sevenchild div{
+                width: 100%;
+                margin: auto;
+                padding: 10px;
+                margin: 0;
+            }
+            #footer{
+                display: flex;
+                flex-direction: column ;
+                width: 100%;
+                gap:25px;
+                margin-top: 40px;
+                background-color: #f5f5f5;
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            }
+            #footer div{
+                width:100%;
+                margin: 0px;
+                padding-right: 30px;
+                padding-left: 50px;
+            }
+
+        }
+        @media screen and (min-width:0px) and (max-width: 700px){
+            #imgdetail{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 15px;
+                margin-top: 40px;
+            }
+            #six{
+                display: flex;
+                flex-direction: column;
+                padding: 10px 0px;
+                gap:30px;
+            }
+            #sevenchild{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap:30px; 
+            }
+            #sevenchild div{
+                width: 100%;
+                margin: auto;
+                padding: 10px;
+                margin: 0;
+            }
+            #footer{
+                display: flex;
+                flex-direction: column ;
+                width: 100%;
+                gap:25px;
+                margin-top: 40px;
+                background-color: #f5f5f5;
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            }
+            #footer div{
+                width:100%;
+                margin: 0px;
+                padding-right: 30px;
+                padding-left: 50px;
+            }
+
         }
     

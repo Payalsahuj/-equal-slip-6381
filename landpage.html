@@ -17,7 +17,7 @@
     <p style="background-color: black; color: white; text-align: center; padding-bottom: 7px; margin-bottom: 5px;"> <img
             src="./image/icons8-bus-64.png" style="height: 25px; margin-right: 5px;" alt=""> Get 20% off* on delivery
         charges - limited period offer!</p>
-
+<!-- --------------------------------------------------Nav bar--------------------------------------------------------->
     <div id="navall">
         <nav id="secondnav">
             <img id="menunavimg" src="./image/icons8-menu-rounded-30.png" style="width: 35px; height: 40px; position: fixed;" alt="">
@@ -44,7 +44,7 @@
             <h3>Offers</h3>
         </nav>
     </div>
-    <!---------------------------------------------side menu----------------------------------------------------->
+    <!----------------------------------------------side menu----------------------------------------------------->
     <div class="sidebarmenu" id="sidebarmenu">
         <div id="cut" style="margin-top: 15px; padding-left: 15px; text-align: left;"><img style="width: 25px; height: 24px; margin-right: 20px;" src="./image/icons8-x-50.png" alt=""></div>
         <ul class="menu">
@@ -108,7 +108,7 @@
                 <div id="cut4" style=" margin-top: 15px; text-align:left; margin-left: 10px; margin-bottom: 10%;"><img style="  width: 25px; height: 20px; " src="./image/icons8-x-50.png" alt=""></div>
                 <div style="display: flex; justify-content: space-between; padding-right: 7%; padding-bottom: 8%;">
                     <h1 style="padding-left: 7%;">Hej</h1>
-                    <button id="loginbtn"> Log in</button>
+                    <div id="loginbtn"> Log in</div>
                 </div>
                 <hr>
                 <div>
@@ -128,7 +128,7 @@
         </ul>
 
     </div>
-    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+    <!-- --------------------------------------------------Header part--------------------------------------------------- -->
     <div id="main">
     <div id="percentage">
         <div id="one">
@@ -179,6 +179,8 @@
                     <p>Bookshelf & wall organisation from Rs.75</p>
                 </div></div>
         </div>
+
+
 
         <div class="main-carousal" style="margin-top: 100px; margin-bottom: 100px;" data-flickity='{ "groupCells": true }'>
             <div class="cell2">
@@ -386,9 +388,12 @@
         </div>
         <!-- -------------------------------------------------------------------------------------------------------- -->
         <h1 style="margin-top: 50px; ">More ideas and inspiration</h1>
-        <!-- sliding button section -->
-        
-
+        <div id="imgdetail">
+            
+        </div>
+        <div id="showmorediv">
+            <button id="showmorebtn">Show more</button> 
+        </div>
         <!-- -------------------------------------------------------------------------------------------------------------------- -->
         <h1 style="margin-top: 50px;margin-bottom: 25px; ">Discover our services</h1>
         <div class="main-carousal" data-flickity='{ "groupCells": true }'>
@@ -419,7 +424,7 @@
             <div>
                 <h3>Product recalls</h3>
                 <img  src="https://www.ikea.com/images/bf/e2/bfe239c44b15ce483c987e2250df4d64.jpg?f=l" alt="">
-                <button style="margin-top: 80px;">Learn more</button>
+                <button style="margin-top: 17%;">Learn more</button>
             </div>
         </div>
         <!-- ---------------------------------------------------------------------------------------------------------- -->
@@ -441,7 +446,7 @@
             
         </div>
     </div>
-    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+    <!-- ------------------------------------------------------Footer part------------------------------------------------- -->
     
     <footer id="footer">
         <div id="footerfirst">
@@ -529,196 +534,15 @@
         </div>
 
     </footer>
+
+    
 </div>
 
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="/path/to/flickity.pkgd.min.js"></script>
-
-    
+<script src="/path/to/flickity.pkgd.min.js"></script>   
 </body>
-
 </html>
+<script src="landpage.js">
 
-<script>
-    let sidebarmenu=document.getElementById("sidebarmenu")
-    let menunavimg=document.getElementById("menunavimg");
-    let sidebarmenuproduct=document.getElementById("sidebarmenuproduct")
-    let menucarddetails=document.getElementById("menucarddetails")
-    menunavimg.addEventListener("click",()=>{
-        sidebarmenu.style.display="block";
-        
-    })
-    let cut=document.getElementById("cut");
-    cut.addEventListener("click",()=>{
-        sidebarmenu.style.display="none";
-        
-    })
-    let product=document.getElementById("product");
-    product.addEventListener("click",()=>{
-        sidebarmenuproduct.style.display="block"
-    })
-    let cut2=document.getElementById("cut2")
-    cut2.addEventListener("click",()=>{
-        sidebarmenuproduct.style.display="none"
-    })
-    
-    let cut3=document.getElementById("cut3")
-    cut3.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="none";
-
-    })
-
-    let stor=document.getElementById("stor");
-    let furniture=document.getElementById("furniture");
-    let home=document.getElementById("home")
-    let decoration=document.getElementById("decoration")
-    let lighting=document.getElementById("lighting")
-    let kitchen=document.getElementById("kitchen")
-    let smart=document.getElementById("smart")
-    let beds=document.getElementById("beds")
-    let baby=document.getElementById("baby")
-    let bathroom=document.getElementById("bathroom")
-    let outdoor=document.getElementById("outdoor")
-    let working=document.getElementById("working")
-
-
-
-    let sidebarcarddetails=document.getElementById("sidebarcarddetails")
-    function store(val0="",val1="",val2="",val3="",val4="",val5="",val6="",val7="",val8="",val9="",val10="",val11="",val12="",val13="",val14=""){
-        return {
-            "value0":val0,
-            "value1":val1,
-            "value2":val2,
-            "value3":val3,
-            "value4":val4,
-            "value5":val5,
-            "value6":val6,
-            "value7":val7,
-            "value8":val8,
-            "value9":val9,
-            "value10":val10,
-            "value11":val11,
-            "value12":val12,
-            "value13":val13,
-            "value14":val14
-        }
-    }
-  
-
-    stor.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="block";
-        let storeobj=store("Storage & Organisation","Bookcases & shelving units","Storage solution systems","Cabinets & cupboards","TV & media furniture","Chest of drawers & drawer units","Wardrobes","Small storage & organisers","Sideboards, buffets & console tables","Hooks & wall organisation","Cloths stands & shoe racks","Trolleys","Bags","Moving supplies","Wall shelves");
-        createlist(storeobj)
-        
-    })
-    furniture.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="block";
-        let storeobj=store("Furniture","Gaming furniture","Sofas & sofa-beds","Furnitures sets","Beds","Bookcases & shelving units","Tables","Cabinets & cupboards","TV &media furniture","Chest of drawers & drawer units","Wardrobes","Chairs","Outdoor furniture","Sideboards, buffets & console tables","Children's furniture");
-        createlist(storeobj)
-    })
-
-    home.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="block";
-        let storeobj=store("Home Textiles","Bedding","Curtains & blinds","Cushions & cushion covers","Children's textiles","Outdoor cushions","Blankets & throws","Table linen","Bath textiles","Fabrics & sewing","Kitchen testiles","Baby textiles","Fabrics & sewing","Kitchen testiles","Baby textiles","Clothing & accessories","Chair pads","Riugs");
-        createlist(storeobj)
-    })
-    decoration.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="block";
-        let storeobj=store("Decoration","Frames & pictures","Plants & flowers","Storage boxes & baskets","Flower pots & planters","Mirrors","Candle holders & candles","Vases & bowls","Vases & bowls","Noticeboards","Decorative accessories","Paper shop","Clocks","Home fragrance","Holiday decoration");
-        createlist(storeobj)
-        
-    })
-    lighting.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="block";
-        let storeobj=store("Lighting","Lamps","Decorative lighting","Integrated lighting","Smart lighting","Outdoor lighting","Bathroom lighting","LED bulbs");
-        createlist(storeobj)
-    })
-
-    kitchen.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="block";
-        let storeobj=store("Kitchen & appliances","Kitchen doors & drawer fronts","Kitchen cabinets","kitchens","METOD interior fitting","Pantry","Wall storage","Kitchen worktops","Kitchen appliances","Kitchen islands & trolley","Knobs & handles","Knobs lighting","METOD Kitchen taps & sinks","Splashbacks & wall panels","Units kitchens");
-        createlist(storeobj)
-    })
-
-    smart.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="block";
-        let storeobj=store("Smart Home","Smart air purifiers & filters","Smart lighting","Smart systems & controls","Wi-Fi speakers");
-        createlist(storeobj)
-        
-    })
-    beds.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="block";
-        let storeobj=store("Beds & mattresses","Beds","Bedding","Mattresses","Bedside tables","Under bed storage","Bed slats");
-        createlist(storeobj)
-    })
-
-    baby.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="block";
-        let storeobj=store("Baby & children","Children","Baby");
-        createlist(storeobj)
-    })
-   bathroom.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="block";
-        let storeobj=store("Bathroom products","Bathroom vanities","Bathroom storage","Bathroom mirrors","Bathroom accessories","Bathroom laundry","Bath textiles","Bathroom lighting","Bathroom furnitures sets","Bathroom stools & benches","Bathroom sinks","Showers","Bathroom taps","Spa accessories");
-        createlist(storeobj)
-        
-    })
-    outdoor.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="block";
-        let storeobj=store("Outdoor products","Outdoor furniture","Outdoor organising","Parasols & gazebos","Outddoor kitchen & accessories","Outdoor pots & plants","Outdoor accessories","Outdoor lighting","Outdoor rugs","Outdoor flooring");
-        createlist(storeobj)
-    })
-
-    working.addEventListener("click",()=>{
-        sidebarcarddetails.style.display="block";
-        let storeobj=store("Working from home","Desks chairs","Desks & computer desks","Desks & chair sets","Multifunctional tables","Drawer units","Storage units & cabinets","Room dividers","Desk dividers","Work & study lamps","Cables & charges","Paper 7 media organisers");
-        createlist(storeobj)
-    })
-
-    function createlist(storeobj){
-        menucarddetails.innerHTML="null";
-        let storedata=`
-        <li id="buttonname"><h2>${storeobj.value0}</h2></li>
-            <li><h3>Shop all</h3></li>
-            <li><a href="">${storeobj.value1}</a></li>
-            <li><a href="">${storeobj.value2}</a></li>
-            <li><a href="">${storeobj.value3}</a></li>
-            <li><a href="">${storeobj.value4}</a></li>
-            <li><a href="">${storeobj.value5}</a></li>
-            <li><a href="">${storeobj.value6}</a></li>
-            <li><a href="">${storeobj.value7}</a></li>
-            <li><a href="">${storeobj.value8}</a></li>
-            <li><a href="">${storeobj.value9}</a></li>
-            <li><a href="">${storeobj.value10}</a></li>
-            <li><a href="">${storeobj.value11}</a></li>
-            <li><a href="">${storeobj.value12}</a></li>
-            <li><a href="">${storeobj.value13}</a></li>
-            <li><a href="">${storeobj.value14}</a></li>
-        `
-        menucarddetails.innerHTML=storedata;
-
-    }
-    let leftslidermenu=document.getElementById("leftslidermenu");
-    let loginbtn=document.getElementById("loginbtn");
-    loginbtn.addEventListener("click",()=>{
-        location.href="./login.html";
-    })
-    
-
-    let secondbox=document.getElementById("secondbox");
-    secondbox.addEventListener("click",()=>{
-        leftslidermenu.style.display="block";
-    })
-
-  
-    let cut4=document.getElementById("cut4")
-    cut4.addEventListener("click",()=>{
-
-        leftslidermenu.style.display="none";
-    })
-
-    let userdetail=JSON.parse(localStorage.getItem("userdata"))
-    let log=document.getElementById("log")
-    log.innerHTML=`Hej! ${userdetail.firstname} ${userdetail.surname}`
 </script>
