@@ -20,6 +20,19 @@ function renderProduct(data){
           </div>
       `
       productPage.innerHTML=cardList;
+      let hoverImg=document.querySelectorAll(".productImg");
+      hoverImg.forEach((item,i)=>{
+          item.addEventListener("mouseenter",function(){
+            item.setAttribute("src",data[i].image2);
+            item.style.cursor="pointer"
+          })
+          
+      })
+      hoverImg.forEach((item,i)=>{
+        item.addEventListener("mouseleave",function(){
+          item.setAttribute("src",data[i].image1);
+        })
+    })
 }
 
 // making of each cards
@@ -36,6 +49,40 @@ function productCard(image,title,des,price,rating,rCount){
     `
     return card;
 }
-// hovering image on product display page ---------------------------------------------------------------------
+// hovering image on product display page for button room and---------------------------------------------------------------------
+let RoomBtn = document.getElementById("roomFilter");
+RoomBtn.addEventListener("click",function(){
+    renderRoom(globalData);
+    ProBtn.style.border="1px solid";
+    RoomBtn.style.border="2px solid"
+})
+function renderRoom(data){
+     let cardList=`
+          <div class="cardList">
+           ${data.map((item)=>productCard(item.image2,item.title,item.description1,item.price,item.rating[0],item.rating[1])).join('')}
+          </div>
+      `
+      productPage.innerHTML=cardList;
+      let hoverImg=document.querySelectorAll(".productImg");
+      hoverImg.forEach((item,i)=>{
+          item.addEventListener("mouseenter",function(){
+            item.setAttribute("src",data[i].image1);
+            item.style.cursor="pointer"
+          })
+          
+      })
+      hoverImg.forEach((item,i)=>{
+        item.addEventListener("mouseleave",function(){
+          item.setAttribute("src",data[i].image2);
+        })
+    })
+}
 
-
+// hovering image on product display page for button product ----------------------------------------------------------
+let ProBtn = document.getElementById("productFilter");
+ProBtn.addEventListener("click",function(){
+   
+    renderProduct(globalData);
+    ProBtn.style.border="2px solid";
+    RoomBtn.style.border="1px solid"
+})
