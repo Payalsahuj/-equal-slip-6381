@@ -93,6 +93,24 @@ ProBtn.addEventListener("click",function(){
     ProBtn.style.border="2px solid";
     RoomBtn.style.border="1px solid"
 })
+// search functionality of web--------------------------------------------------------------------------------
+
+function search(){
+  let x = document.getElementById("searchBox").value;
+  let newData = globalData.filter((item)=>{
+    return item.title.toLowerCase().includes(x.toLowerCase());
+  })
+  if(newData.length!=0){
+    document.querySelector(".top").innerHTML="";
+    document.querySelector(".top").innerHTML=`<h1 style="margin:5px 0px">Showing results for ${x}</h1> <p style="font-size:18px">We found ${newData.length} products.</p>`
+    productPage.innerHTML="";
+    renderProduct(newData);
+  }else{
+    document.querySelector(".top").innerHTML="";
+    document.querySelector(".top").innerHTML=`<h1 style="margin:5px 0px">There are no results for ${x}</h1> <p style="font-size:18px">Try again using a different spelling or keywords.</p>`
+    productPage.innerHTML="";
+  }
+}
 
 //product click
 function productClickFn(e) {
