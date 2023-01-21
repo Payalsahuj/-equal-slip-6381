@@ -72,6 +72,10 @@ function renderRoom(data){
             item.setAttribute("src",data[i].image1);
             item.style.cursor="pointer"
           })
+
+          item.addEventListener('click', (e) => {
+            productClickFn(e)
+        })
           
       })
       hoverImg.forEach((item,i)=>{
