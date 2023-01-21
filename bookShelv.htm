@@ -70,55 +70,65 @@
         </div>
 
         <div class="filterProduct">
-           <div>
             <div>
-                <select name="Sort" id="sort">
-                    <option value="">Sort</option>
-                    <option value="bestMatch">Best match</option>
-                    <option value="lth">Price: low to high</option>
-                    <option value="htl">Price: high to low</option>
-                    <option value="rating">Customer rating</option>
-                    <option value="name">Name</option>
-                    <option value="popular">Most popular</option>
-                    <option value="width">Width</option>
-                    <option value="height">Height</option>
-                    <option value="depth">Depth</option>
+             <div>
+                 <select onchange="sortProd()" name="Sort" id="sort">
+                     <option value="">Sort</option>
+                     <option value="lth">Price: low to high</option>
+                     <option value="htl">Price: high to low</option>
+                     <option value="rating">Customer rating</option>
+                     <option value="name">Name</option>
+                     <option value="popular">Most popular</option>
+                     <option value="width">Width</option>
+                     <option value="height">Height</option>
+                     <option value="depth">Depth</option>
+                  </select>
+                </div>
+                <div>
+                 <select onchange="sortCat()" name="category" id="category">
+                     <option value="">Category</option>
+                     <option value="book">Bookcase</option>
+                     <option value="shelv">Shelving units</option>
+                     <option value="pantry">Pantry</option>
+                     <option value="wallShelve">Wall shelves</option>
                  </select>
-               </div>
-               <div>
-                <select name="category" id="category">
-                    <option value="">Category</option>
-                    <option value="book">Bookcase</option>
-                    <option value="shelv">Shelving units</option>
-                    <option value="pantry">Pantry</option>
-                </select>
-               </div>
-               <div>
-                <select name="size" id="size">
-                    <option value="">Size</option>
-                    <optgroup label="Width">
-                    </optgroup>
-                    <optgroup label="Height"></optgroup>
-                    <optgroup label="Depth"></optgroup>
-                </select>
-               </div>
-               <div>
-                <select name="price" id="price">
-                    <option value="">Price</option>
-                    <option value="1999">₹0 - 1,999</option>
-                    <option value="2-4">₹2,000 - 3,999</option>
-                    <option value="4-6">₹4,000 - 5,999</option>
-                    <option value="6-8">₹6,000 - 7,999</option>
-                    <option value="8">₹8,000+</option>
-                </select>
-               </div>
-           </div>
-           <div>
-            <button id="productFilter">Product</button>
-            <button id="roomFilter">Room</button>
-           </div>
-           
-        </div>
+                </div>
+                <div>
+                 <select onchange="sortSize()" name="size" id="size">
+                     <option value="">Size</option>
+                     <optgroup label="Width">
+                         <option value="0-50">0 - 50 cm</option>
+                         <option value="51-80">51 - 80 cm</option>
+                         <option value="80">80+ cm</option>
+                     </optgroup>
+                     <optgroup label="Height">
+                         <option value="1-50">0 - 50 cm</option>
+                         <option value="50-100">51 - 100 cm</option>
+                         <option value="100">100+ cm</option>
+                     </optgroup>
+                     <optgroup label="Depth">
+                         <option value="0-30">0 - 30 cm</option>
+                         <option value="30">30+ cm</option>
+                     </optgroup>
+                 </select>
+                </div>
+                <div>
+                 <select onchange="sortPrice()" name="price" id="price">
+                     <option value="">Price</option>
+                     <option value="1999">₹0 - 1,999</option>
+                     <option value="2-4">₹2,000 - 3,999</option>
+                     <option value="4-6">₹4,000 - 5,999</option>
+                     <option value="6-8">₹6,000 - 7,999</option>
+                     <option value="8">₹8,000+</option>
+                 </select>
+                </div>
+            </div>
+            <div>
+             <button id="productFilter">Product</button>
+             <button id="roomFilter">Room</button>
+            </div>
+            
+         </div>
         <hr style="width: 89%;">
         
         <div class="shelvProduct">
