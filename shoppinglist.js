@@ -1,42 +1,88 @@
+let database=[]
 
+load();
 
+function load() {
 
+   database = JSON.parse(localStorage.getItem("cart")) || []
+  let main = document.getElementById('main')
+  var cartData = database;
+  document.getElementById('count').innerText = cartData.length;
 
+  main.innerHTML = `${cartData.map(x => getItem(x))}`
 
-let database=[];
-fetch("bookShelv.json")
-.then((res)=>res.json())
-.then((data)=>{
-    database = data;
-    load();
-});
+  let allBtns = document.getElementsByClassName('delete')
+  for (let btn of allBtns) {
+    btn.addEventListener('click', (e) => {
+      deleteFn(e)
+    })
+  }
 
-let main = document.getElementById('main')
-function load(){
-    let ids = JSON.parse(localStorage.getItem('cart')) ||[]
-    document.getElementById('count').innerText = ids.length;
-    var cartData = database.filter(x=> ids.includes(+x.id));
+  addListener()
+  showTotal()
+  setSelect()
+}
 
-    main.innerHTML = `${cartData.map(x=>getItem(x))}`
+function showTotal() {
+  let tot = 0
+  let totalEl = document.querySelectorAll('.total');
+  totalEl.forEach(elem => {
+    let price = +(elem.innerText.trim())
+    tot = tot + price
+  })
 
-    let allBtns= document.getElementsByClassName('delete')
-    for(let btn of allBtns){
-        btn.addEventListener('click', (e)=>{
-            deleteFn(e)
-        })
+  document.getElementById('sub-total').innerText = `Rs. ${tot}`
+  localStorage.setItem('finalTotal', JSON.stringify(tot))
+}
+
+function setSelect(){
+  
+  let allSel = document.getElementsByClassName('quan-sel');
+  for (var sel of allSel) {
+    let id = +sel.dataset.id
+    let product = database.find(product => +product.id === id);
+    sel.value = product.quan ? product.quan :1
+  }
+}
+
+function addListener() {
+  let allSel = document.getElementsByClassName('quan-sel');
+  for (var sel of allSel) {
+    sel.addEventListener('change', (e) => {
+      selectFn(e)
+    })
+  }
+}
+function selectFn(e) {
+  let id = +e.target.dataset.id
+  let quan = +e.target.value;
+
+  let totEl = document.getElementById(id);
+
+  let product = database.find(product => +product.id === id)
+ 
+
+  let price = +product.price
+  totEl.innerText = `${quan * price}`
+
+  database.forEach(elem => {
+    if(+elem.id === id) {
+      elem.quan = quan
     }
+  })
+  localStorage.setItem('cart', JSON.stringify(database))
+  showTotal()
 }
 
-function deleteFn(e){
-    let id = +e.target.dataset.id;
-    let ids = JSON.parse(localStorage.getItem('cart')) ||[]
-    let newIds = ids.filter(x=> +x !== id)
-    localStorage.setItem('cart',JSON.stringify(newIds))
-    load()
+function deleteFn(e) {
+  let id = +e.target.dataset.id;
+  let products = database.filter(x => +x.id !== id)
+  localStorage.setItem('cart', JSON.stringify(products))
+  load()
 
 }
-function getItem(product){
-    return `<div class="main-div">
+function getItem(product) {
+  return `<div class="main-div">
     <div class="left-div">
       <div><img src=${product.image1}" />
       </div>
@@ -48,15 +94,15 @@ function getItem(product){
     </div>
     <div class="right-div">
       <div>
-        <div class="total">Rs.67,830.00</div>
-        <div>${product.price} / pieces</div>
+        <div>Rs. <span id=${product.id}  class="total">${+product.price * (+product.quan?+product.quan: 1)}</span></div>
+        <div>Rs. ${product.price} / pieces</div>
       </div>
       <div>
         <div><button data-id=${product.id} class="delete"><span><img data-id=${product.id}
                 src="https://order.ikea.com/in/en/checkout/static/media/remove-thin-24.16c1cc7a.svg" /></span></button>
         </div>
         <div class="sel-div">
-          <select>
+          <select class="quan-sel" data-id=${product.id}>
             <option value="1" selected>1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -71,4 +117,13 @@ function getItem(product){
       </div>
     </div>
   </div>`
+}
+
+
+function showpincode() {
+  document.querySelector('.pincode-wrapper').classList.remove("display-none");
+}
+
+function proceed() {
+  document.location.href = "checkout.html"
 }

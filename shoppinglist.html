@@ -47,11 +47,10 @@
   <div id="main"></div>
   <div class="bottom-div">
     <div>
-
     </div>
     <div>
       <div>Subtotal</div>
-      <div>Rs.1,20,180.00</div>
+      <div id="sub-total">Rs.1,20,180.00</div>
     </div>
     <div></div>
   </div>
@@ -60,7 +59,7 @@
   <div class="home">
     <div class="del">
       <div>
-        <img src="https://order.ikea.com/in/en/checkout/static/media/ws-home-delivery-blue.ff16e8a8.svg" />
+        <img onclick="showpincode()" src="https://order.ikea.com/in/en/checkout/static/media/ws-home-delivery-blue.ff16e8a8.svg" />
       </div>
       <div>Home delivery</div>
     </div>
@@ -69,6 +68,19 @@
       <div>Click collect</div>
     </div>
 
+  </div>
+
+
+  <div class="pincode-wrapper display-none">
+<div>
+  Enter a PIN code to see product availability and delivery options.
+</div>
+<div>
+  <input id="pincode"/>
+</div>
+<div>
+ <img id="proceed" onclick="proceed()" src="./images/proceed.PNG"/>
+</div>
   </div>
   <div class="res"> </div>
   <div class="div-bot">

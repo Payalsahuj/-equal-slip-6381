@@ -1,27 +1,52 @@
 let database = [];
-fetch("bookShelv.json")
+let currentProduct;
+  fetch("bookShelv.json")
   .then((res) => res.json())
   .then((data) => {
-    database = data;
-    load();
-  });
-
+    let db = database = [...data]
+    return db
+  })
+  .then((data2) => {
+    fetch("gaming.json")
+    .then((res) => res.json())
+    .then((data1) => {
+      let gamedata = data1.map(x=> {
+        return {
+          image1 : x.hover_image,
+          image2 : x.first_image,
+          image3 : x["2nd_image"],
+          image4 : x["3rd_image"],
+          rating: ["", x.review],
+          description2: x.des,
+          description1: x.des,
+          price:x.cost,
+          title: x.tittle,
+          id: x.id
+        }
+      });
+      gamedata.forEach(element => {
+        data2.push(element)
+      });
+      database = data2;
+      load();
+    })
+  })
+  ;
 
 function load() {
-  let id = JSON.parse(localStorage.getItem("productDetailId")) || 11
-  let product = database.find(x => +x.id === id)
-
+  let id = +JSON.parse(localStorage.getItem("productDetailId")) || 11
+  currentProduct = database.find(x => +x.id === id)
 
   let display = document.getElementById("container")
   display.innerHTML = ` 
     <div class="wrapper">
             <div class="leftdiv">
-                <img src="${product.image1}"/>
-                <img src="${product.image2}" />
-                <img src="${product.image3}"/>
-                <img src="${product.image4}"/>
+                <img src="${currentProduct.image1}"/>
+                <img src="${currentProduct.image2}" />
+                <img src="${currentProduct.image3}"/>
+                <img src="${currentProduct.image4}"/>
                 <div class="desc">
-                <p>${product.description2}</p>
+                <p>${currentProduct.description2}</p>
                 </div>
                <div> <p>Delivery and assembly prices not included.</p></div>
                 <div>Article number</div>
@@ -29,20 +54,20 @@ function load() {
                 <div class="more-info"><span>Product details</span><span><img src="./images/arrow.png"</span></div>
                 <div class="more-info"><span>Measurements</span><span><img src="./images/arrow.png"</span></div>
                 <div class="more-info"><div id="review-wrapper"><div class="review"><span>Reviews</span>
-                <img src="./images/stars.PNG"/></div><label class="stars-countb">(${product.rating[1]})</label>
+                <img src="./images/stars.PNG"/></div><label class="stars-countb">(${currentProduct.rating[1]})</label>
                 </div><span><img src="./images/arrow.png"</span></div>
                 <div></div>
             </div> 
             <div class="rightdiv">
                 <div>
                     <div class="title">
-                        ${product.title}
+                        ${currentProduct.title}
                     </div>
-                    <span>${product.description1}</span>
+                    <span>${currentProduct.description1}</span>
                 </div>
-                <p>Rs.<span> ${product.price}</span></p>
+                <p>Rs.<span> ${currentProduct.price}</span></p>
                 <p>Price incl. of all taxes</p>
-                <p><img class="stars" src="./images/stars.PNG"/><label class="stars-count">(${product.rating[1]})</label></p>
+                <p><img class="stars" src="./images/stars.PNG"/><label class="stars-count">(${currentProduct.rating[1]})</label></p>
                 <p>How to get it</p>
                 <div class="cis">
                     <div> <img src="./images/store.PNG"/>
@@ -53,7 +78,7 @@ function load() {
                     <input class="pininput"/> 
                     <button class="check"> Check</button>
                 </div>
-                <div><img data-id=${product.id} id="addto-cart" src="./images/a2c.png"/></div>
+                <div><img data-id=${currentProduct.id} id="addto-cart" src="./images/a2c.png"/></div>
                 <div id="noti-div"> <label id="noti"></label></div>
             </div>   
         </div>`
@@ -78,9 +103,9 @@ function addToCartFn(e) {
     return;
   }
 
-  let id = +e.target.dataset.id
   let cartArr = JSON.parse(localStorage.getItem('cart')) || []
-  cartArr.push(id)
+
+  cartArr.push(currentProduct)
   localStorage.setItem('cart', JSON.stringify(cartArr))
   e.target.setAttribute("src", "./images/a2c2.png")
   isItemAdded = true;
