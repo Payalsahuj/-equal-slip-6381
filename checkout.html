@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+  <div id="navall">
+    <nav id="secondnav">
+      <img id="menunavimg" src="./image/icons8-menu-rounded-30.png" style="width: 35px; height: 40px; position: fixed;"
+        alt="">
+      <img src="./image/DECOR.png"
+        style="height: 60px; width: 110px; border-radius: 7px; margin-right: 7%; margin-left: 8%;" alt="">
+      <div class="box">
+        <img src="./image/icons8-search-16.png" alt="">
+        <input type="text">
+      </div>
+
+      <div id="secondbox" class="box secondbox">
+        <img src="./image/icons8-user-male-64.png" alt="">
+        <h3 id="log">Hej! Log in or sign up</h3>
+      </div>
+
+      <img src="./image/icons8-shuttle-bus-50.png" style="width: 50px; height: 40px; padding-right: 1.5%;" alt="">
+      <img src="./image/icons8-add-to-cart-64.png" style="width: 40px; height: 35px;" alt="">
+      <span id="count"></span>
+    </nav>
+
+    <nav id="thirdnav">
+      <h3 id="product">Products</h3>
+      <h3>Rooms</h3>
+      <h3>New at L.DECOR</h3>
+      <h3>Offers</h3>
+    </nav>
+  </div>
+  <div id="main">
+    <div id="left">Your shopping cart</div>
+    <div id="rigth">
+      <label>3 Product in shopping cart</label>
+      <div id="rupee">
+        <p>Delivery fee/Picking fee</p>
+        <h6>RS. 3,999.00</h6>
+      </div>
+      <div id="border"></div>
+      <div id="total">
+        <label>Total Amount</label>
+        
+        <label id="sub-total" class="font"><span>Rs.</span >0</label>
+      </div>
+      <div><label id="label">All prices are inclusive of taxes</label></div>
+      <br>
+      <br>
+      <div id="order-div"><button class="btn">Place order</button></div>
+      
+    </div>
+  </div>
+  <div id="con"></div>
+<div class="last-div">
+  <div class="last-left">
+    <label>Add your promo/coupon code here </label>
+   <div class="input"><input type="number" placeholder="Add promo/Coupon"><div><button>Apply</button></div></div> 
+   <label>Only one promo/coupon code per order</label>
+  </div>
+  <div class="last-rigth">
+    <div class="last-A">order summary</div>
+    <div class="last-2">
+      <label>order value:</label>
+      <label id="bottom-total">Rs 1,16,190.00</label>
+    </div>
+    <div class="last-3">
+      <label>Delivery fee/picking fee</label>
+      <label id="bdf">Rs 3,999.00</label>
+    </div>
+    <div id="bor"></div>
+    <div id="bor1"></div>
+    <div class="last-4">
+      <div>Total amount :</div>
+      <div id="ov">Rs 1,20,189.00</div>
+    </div>
+    <div class="last-5">All prices are inclusive of taxes</div>
+    <div class="logo"><img src="pay.png" alt=""></div>
+    <div class="logo-btn"><button class="btn1">Place order</button></div>
+  </div>
+</div>
+ 
+</body>
+<script src="./checkout.js"></script>
+</html>

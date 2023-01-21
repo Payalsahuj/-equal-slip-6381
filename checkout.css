@@ -1,0 +1,364 @@
+
+body {
+    font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui, sans-serif !important;
+    color: #302c2c;
+    font-size: .81rem;
+    line-height: 1.385;
+}
+#main {
+    width: 57%;
+    height: auto;
+    display: flex;
+    padding-bottom: 3%;
+    margin: 0 auto;
+}
+
+
+.font {
+    font-size: 20px;
+}
+#left {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    width: 40%;
+
+}
+
+#rigth {
+    width: 60%;
+    margin-top: 10%;
+}
+
+#rupee {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#rupee>h6 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#border {
+    border-bottom: 2px solid grey;
+}
+
+#total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+#label {
+    color: gray;
+    font-size: 10px;
+    float: right;
+    margin-top: 5px;
+}
+
+#order-div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.btn {
+    background-color: rgb(30 81 197);
+    border-radius: 5%;
+    margin-left: 80%;
+    border: 0px;
+    color: white;
+    width: 14%;
+    height: 40px;
+}
+
+.main-div {
+    display: flex;
+    width: 57%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-top: 1px solid lightgrey;
+    margin-bottom: 25px;
+    padding-top: 2%;
+
+}
+
+.main-div>.left-div {
+    display: flex;
+}
+
+.left-div > div:nth-of-type(1){
+    padding-right: 8%;
+}
+
+.sd{
+    display: flex;
+    width: 110px;
+    justify-content: space-between;
+}
+.main-div>.right-div {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 170px;
+}
+
+.main-div>.left-div>.left {
+    display: flex;
+    flex-flow: column;
+
+}
+
+.heading> {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 62px;
+}
+
+.main-div>.left-div img {
+    width: 136px;
+}
+
+.main-div>.right-div>div:nth-of-type(1) {
+
+    font-size: 118%;
+}
+
+
+
+.main-div>.right-div>div:nth-of-type(2) button {
+
+    display: inline-block;
+    width: 100%;
+    max-width: 352px;
+    height: 40px;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: .8125rem;
+    line-height: 37px;
+    font-family: inherit;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    background: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-clip: padding-box;
+    overflow: visible;
+    color: #444;
+    border-color: #666;
+}
+
+
+.main-div>.right-div>div:nth-of-type(2) select {
+    width: 100%;
+    max-width: 352px;
+    height: 40px;
+    margin: 0;
+    padding: 0 10px;
+    border: 1px solid #666;
+    border-radius: 2px;
+    background: #fff url(https://order.ikea.com/in/en/checkout/static/media/chevron-down-thin-24.1667eab2.svg) no-repeat right 8px center/1.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1rem;
+    line-height: 1.15;
+    font-family: inherit;
+    text-transform: none;
+}
+
+.main-div>.right-div>div:nth-of-type(2) img {
+    width: 16px;
+}
+
+.main-div>.right-div>div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sel-div {
+    width: 65%;
+}
+
+#title,
+.total {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.heading img {
+    width: 24px;
+}
+
+.bottom-div {
+
+    width: 200%;
+    height: 100%;
+
+}
+
+.bottom-div {
+    display: flex;
+    flex-flow: column;
+    width: 58%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    height: 67px;
+    padding-top: 11px;
+}
+.last-div{
+    width:57%;
+    padding-bottom: 3%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 2%;
+    border-top: 1px solid lightgray;
+
+}
+.input{
+    display: flex;
+}
+.last-2{
+display: flex;
+justify-content: space-between;
+}
+.last-3{
+display: flex;
+justify-content: space-between;
+
+}
+.last-left{
+    width: 50%;
+}
+.last-rigth{
+    width: 50%;
+}
+
+.last-A{
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 2%;
+  padding-top:2% ;
+}
+#bor{
+    border-bottom:2px dotted gray ;
+    padding-bottom: 1%;
+}
+#bor1{
+    border-bottom:2px solid gray ;
+    padding-bottom: 1%;
+}
+.last-4{
+    display: flex;
+    justify-content: space-between;
+}
+.last-5{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.last-4 >div :nth-of-type(1){
+    font-weight: bold; 
+}
+.logo{
+    padding-top: 5%;
+}
+.logo-btn{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.btn1 {
+    background-color: rgb(30 81 197);
+    border-radius: 5%;
+    margin-left: 80%;
+    border: 0px;
+    color: white;
+    width: 17%;
+    height: 40px;
+    
+}
+.remove *{
+    margin: 0 auto;
+}
+
+.remove{
+    font-size: 12px;
+    display: flex;
+
+}
+.remove > span{
+    margin-top: 4px;
+    display: block;
+}
+
+/* nav */
+
+    
+#secondnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.box {
+    width: 600px;
+    height: 8px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(226, 229, 233);
+}
+
+.box>img {
+    font-size: 20px;
+    width: 27px;
+    padding-right: 10px;
+}
+
+.box>input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+
+    background-color: rgb(226, 229, 233);
+}
+
+.secondbox {
+    width: 265px;
+    background-color: white;
+}
+
+.secondbox:hover {
+    background-color: rgb(226, 229, 233);
+    cursor: pointer;
+}
+
+#thirdnav {
+    padding-left: 150px;
+    margin-top: 20px;
+    display: flex;
+   
+}
+#thirdnav h3:hover{
+    cursor: pointer;
+}
+#thirdnav h3{
+    margin-right: 40px;
+}
