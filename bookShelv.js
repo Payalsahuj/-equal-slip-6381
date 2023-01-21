@@ -118,3 +118,123 @@ function productClickFn(e) {
     localStorage.setItem('productDetailId', id);
     document.location.href = "details.html"
 }
+
+// sort by price------------------------------------------------------------------------------------------------------
+function sortProd(){
+  let select = document.getElementById("sort").value;
+  if(select=="htl"){
+    globalData.sort((a,b)=> b.price-a.price);
+  }
+  if(select=="lth"){
+    globalData.sort((a,b)=> a.price-b.price);
+  }
+  if(select=="rating"){
+    globalData.sort((a,b)=> b.rating[0].length-a.rating[0].length)
+  }
+  if(select=="name"){
+    globalData.sort((a,b)=>{
+      if (a.title>b.title) return 1;
+      if (a.title<b.title) return -1;
+      return 0;
+    })
+  }
+  if(select=="popular"){
+    globalData.sort((a,b)=> b.rating[1]-a.rating[1]);
+  }
+  if(select=="width"){
+    globalData.sort((a,b)=> b.Width-a.Width);
+  }
+  if(select=="height"){
+    globalData.sort((a,b)=> b.Height-a.Height);
+  }
+  if(select=="depth"){
+    globalData.sort((a,b)=> b.Depth-a.Depth);
+  }
+  
+  productPage.innerHTML="";
+  renderProduct(globalData);
+
+}
+// sorting by category--------------------------------------------------------------------------------------------------
+function sortCat(){
+  let select = document.getElementById("category").value;
+  let newData=globalData;
+  if(select=="book"){
+    newData = globalData.filter((item)=>item.category=="bookcase");
+  }
+  if(select=="shelv"){
+    newData = globalData.filter((item)=>item.category=="shelf unit");
+  }
+  if(select=="pantry"){
+    newData = globalData.filter((item)=>item.category=="pantry")
+  }
+  if(select=="wallShelve"){
+    newData = globalData.filter((item)=>item.category=="wall shelf")
+  }
+ 
+  productPage.innerHTML="";
+  renderProduct(newData);
+}
+// sort size ---------------------------------------------------------------------------------------------------
+function sortSize(){
+  let select = document.getElementById("size").value;
+  let newData=globalData;
+  if(select=="0-50"){
+    newData = globalData.filter((item)=>item.Width<=50);
+  }
+  if(select=="51-80"){
+    newData = globalData.filter((item)=>item.Width>=51&&item.Width<=80);
+  }
+  if(select=="80"){
+    newData = globalData.filter((item)=>item.Width>80);
+  }
+  if(select=="1-50"){
+    newData = globalData.filter((item)=>item.Height<=50);
+  }
+  if(select=="50-100"){
+    newData = globalData.filter((item)=>item.Height>50&&item.Height<=100);
+  }
+  if(select=="100"){
+    newData = globalData.filter((item)=>item.Height>100);
+  }
+  if(select=="0-30"){
+    newData = globalData.filter((item)=>item.Depth<=30);
+  }
+  if(select=="30"){
+    newData = globalData.filter((item)=>item.Depth>30);
+  }
+ 
+  productPage.innerHTML="";
+  renderProduct(newData);
+ 
+}
+// sorting price --------------------------------------------------------------------------------------------------
+function sortPrice(){
+  let select = document.getElementById("price").value;
+  let newData=globalData;
+  if(select=="1999"){
+    newData = globalData.filter((item)=>item.price<=1999);
+  }
+  if(select=="2-4"){
+    newData = globalData.filter((item)=>item.price>=2000&&item.price<=3999);
+  }
+  if(select=="4-6"){
+    newData = globalData.filter((item)=>item.price>=4000&&item.price<=5999);
+  }
+  if(select=="6-8"){
+    newData = globalData.filter((item)=>item.price>=6000&&item.price<=7999);
+  }
+  if(select=="8"){
+    newData = globalData.filter((item)=>item.price>8000);
+  }
+  productPage.innerHTML="";
+  renderProduct(newData);
+}
+
+
+//product click
+function productClickFn(e) {
+    let id = e.currentTarget.dataset.id;
+    localStorage.setItem('productDetailId', id);
+    document.location.href = "details.html"
+}
