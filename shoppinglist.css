@@ -1,3 +1,9 @@
+body {
+    font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui, sans-serif !important;
+    color: #302c2c;
+    font-size: .81rem;
+    line-height: 1.385;
+}
 .main-div{
     display: flex;
     width: 58%;
@@ -16,17 +22,37 @@ display: flex;
         text-align: center;
         font-size: 28px;
 }
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .main-div > .right-div{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     height: 170px;
+    min-width: 17%;
+}
+
+#count {
+    position: absolute;
+    right: 48px;
+    top: 32px;
+    background-color: aquamarine;
+    color: red;
+    width: 20px;
+    border-radius: 22px;
+    align-items: center;
+    text-align: center;
 }
 
 .main-div > .left-div >.left{
     display: flex;
     flex-flow: column;
-    
+    width: 71%;
+    margin: 0 auto;
     }
 .heading > {
     text-align: center;
@@ -109,4 +135,204 @@ display: flex;
 #title,.total{
     font-size: 18px;
     font-weight: 700;
+}
+.heading img{
+    width: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.bottom-div{
+  
+  width: 200%;
+  height: 100%;
+   
+}
+.bottom-div{
+    display: flex;
+    flex-flow: column;
+    width: 58%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    height: 67px;
+    padding-top: 11px;
+}
+.bottom-div > div{
+    border-bottom: 1px solid lightgrey;
+}
+.bottom-div > div:nth-of-type(2){
+    
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.bottom-div > div:nth-of-type(2) > *{
+    font-weight: bold;
+}
+.bottom-div > div:nth-of-type(3){
+    padding-top: 30px;
+    font-weight: bold;
+}
+.des{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.des > .home img{
+width: 32px;
+}
+.home > .del:nth-of-type(1) img{
+   width: 40px;
+   padding-left: 30px;
+}
+.home{
+    display: flex;
+    
+    width: 58%;
+    margin: 0 auto;
+    justify-content:space-around;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    height: 67px;
+    padding-top: 11px;
+
+}
+
+.home > .del2:nth-of-type(2) img{
+    width: 40px;
+    padding-left: 30px;
+}
+.res{
+    width: 58%;
+    margin: 0 auto;
+    justify-content:space-around;
+    
+    border-bottom: 1px solid lightgrey;
+    
+    padding-top: 11px;
+
+}
+.div-bot{
+    display: flex;
+    width: 80%;
+    padding: 2%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.div-bot > .more{
+    display: flex;
+    border: 1px solid lightgray;
+    padding: 2%;
+
+}
+.div-bot > .more img{
+    display: flex;
+    width: 55px;
+    margin: 0 auto;
+    margin-top: 33%;
+    
+}
+.div-bot > .more-f{
+    display: flex;
+
+}
+.div-bot > .more-f img{
+    display: flex;
+    width: 137px;
+    
+}
+.div-bot > .more-s{
+    display: flex;
+
+}
+.div-bot > .more-s img{
+    display: flex;
+    width: 137px;
+    
+}
+.rht{
+    width: 73%;
+    float: right;
+    margin-left: 12%;
+}
+
+.rht label {
+    display: block;
+}
+
+.rht >div:nth-of-type(2) {
+    float: right;
+    text-decoration: underline;
+    color: blue;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+    
+
+
+
+    
+/* nav */
+
+    
+#secondnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.box {
+    width: 600px;
+    height: 8px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(226, 229, 233);
+}
+
+.box>img {
+    font-size: 20px;
+    width: 27px;
+    padding-right: 10px;
+}
+
+.box>input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+
+    background-color: rgb(226, 229, 233);
+}
+
+.secondbox {
+    width: 265px;
+    background-color: white;
+}
+
+.secondbox:hover {
+    background-color: rgb(226, 229, 233);
+    cursor: pointer;
+}
+
+#thirdnav {
+    padding-left: 150px;
+    margin-top: 20px;
+    display: flex;
+   
+}
+#thirdnav h3:hover{
+    cursor: pointer;
+}
+#thirdnav h3{
+    margin-right: 40px;
 }
