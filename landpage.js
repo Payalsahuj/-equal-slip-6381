@@ -68,7 +68,7 @@ function store(val0 = "",url="", val1 = "", val2 = "", val3 = "", val4 = "", val
 
 stor.addEventListener("click", () => {
     sidebarcarddetails.style.display = "block";
-    let storeobj = store("Storage & Organisation","bookShelv.htm", "Bookcases & shelving units", "Storage solution systems", "Cabinets & cupboards", "TV & media furniture", "Chest of drawers & drawer units", "Wardrobes", "Small storage & organisers", "Sideboards, buffets & console tables", "Hooks & wall organisation", "Cloths stands & shoe racks", "Trolleys", "Bags", "Moving supplies", "Wall shelves");
+    let storeobj = store("Storage & Organisation","shelvBook.html", "Bookcases & shelving units", "Storage solution systems", "Cabinets & cupboards", "TV & media furniture", "Chest of drawers & drawer units", "Wardrobes", "Small storage & organisers", "Sideboards, buffets & console tables", "Hooks & wall organisation", "Cloths stands & shoe racks", "Trolleys", "Bags", "Moving supplies", "Wall shelves");
     createlist(storeobj)
 
 })
