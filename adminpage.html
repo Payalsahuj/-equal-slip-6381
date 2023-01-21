@@ -6,117 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        #up {
-            background-color: #004D40;
-            padding-left: 55px;
-            padding-top: 5px;
-            color: #004D40;
-            font-family: arabic;
-        }
-
-        #main {
-            width: 100%;
-            height: 100%;
-            display: flex;
-
-        }
-
-        #first {
-            width: 18%;
-            height: 100%;
-            background-color: #004D40;
-            color: white;
-            padding-left: 2%;
-            font-family: arabic;
-            font-size: 18px;
-        }
-
-        #first h2 {
-            padding-top: 7%;
-        
-        }
-
-        #first h2:hover {
-            cursor: pointer;
-            color: rgb(249, 177, 43);
-        }
-
-        #first img {
-            display: block;
-            width: 82%;
-            height: 100px;
-            padding-bottom: 25px;
-        }
-
-        #second {
-            height: 100%;
-            width: 80%;
-            color: black;
-
-        }
-
-        #mainsection {
-            width: 90%;
-            margin: auto;
-            margin-top: 5%;
-          color:black;
-
-        }
-
-        #dash {
-            margin-top: 10px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(1, 200px);
-            gap: 3%;
-            border-radius: 7px;
-
-        }
-
-        #dash div {
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        .okok {
-            background-color: #004D40;
-            height: 4100px;
-        }
-
-        #tablediv {
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        #tablediv table {
-            width: 100%;
-            text-align: left;
-            font-size: 25px;
-            border: 2px solid #004D40;
-        }
-        thead tr{
-            margin-bottom: 10px;
-        }
-        
-        tbody td{
-            border:2px solid red;
-            gap:10px;
-        }
-        #imageofth{
-            display: block;
-            width: 100%;
-            height: 70px;
-        }
-        th,td{
-            background-color: rgb(182, 247, 247);
-            padding: 5px 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="./adminpage.css">
+   
 </head>
 
 <body>
@@ -134,7 +25,7 @@
             <hr>
             <h2 id="order">Order Details</h2>
             <hr>
-            <h2 id="create">Create Profile</h2>
+            <a href="./admincreate.html" style="color: white; text-decoration: none;"><h2 id="create">Create Profile</h2></a>
             <hr>
             <div class="okok"></div>
         </div>
@@ -159,12 +50,13 @@
                         <h3 style="font-size: 35px; color: rgb(128, 130, 132);">Best Sellers</h3><img
                             style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt="">
                     </div>
-                    <!--  -->
+                    
                 </div>
                 <img style="display: block; width: 90%; margin-top: 30px;" src="./image/Slide72.jpeg" alt="">
 
 
                 <!-- practice -->
+                
 
             </div>
         </div>
@@ -172,165 +64,9 @@
 </body>
 
 </html>
-<script>
-    let dashboard = document.getElementById("Dashboard");
-    let product = document.getElementById("Product");
-    let profile = document.getElementById("profile");
-    let order = document.getElementById("order");
-    let create = document.getElementById("create");
-    let mainsection = document.getElementById("mainsection");
-    let noofproduct=document.getElementById("noofproduct")
-    
-   fetch("https://636e04e8182793016f33bec0.mockapi.io/admin").then((res) => {
-           return res.json()
-       }).then((data) => {
-           
-           let i=data[0].bookselves.length+data[0].gaming.length;
-           
-           noofproduct.innerText=i;
-       })
-       .catch((err) => {
-           console.log(err)
-       })
 
 
 
-    let baseserverurl=`https://636e04e8182793016f33bec0.mockapi.io/admin`
-    dashboard.addEventListener("click", () => {
-        mainsection.innerHTML = null;
-        mainsection.innerHTML = `
-        <h2>Dashboard</h2>
-                <div id="dash">
-                    <!-- No of product -->
-                    <div style="background-color: orange;  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Number of Products <span id="noofproduct"></span> </h3><img src="./image/icons8-open-box-50.png" style="width: 150px; height: 115px;" alt=""></div>
-                    <!-- variety -->
-                    <div style="background-color: rgb(25, 192, 25);  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Total Product 2</h3><img style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt=""></div>
-                    <!-- Best sellers  -->
-                    <div style="background-color: rgb(192, 97, 25);  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Best Sellers</h3><img style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt=""></div>
-                    <!--  -->
-                </div>
-                <img style="display: block; width: 90%; margin-top: 30px;" src="./image/Slide72.jpeg" alt="">
-        `
-        
-    })
-
-    product.addEventListener("click", () => {
-        
-        mainsection.innerHTML = `
-        <h2>Products</h2>
-        <h3>BookSelves product</h3>
-                <div id="tablediv">
-                    <table>
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Description</th>
-                            <th>Cost</th>
-                            <th>Rating</th>
-                            <th>Stock</th>
-                            <th>Image</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbodyone">
-                        <!-- append here -->
-                        
-                    </tbody>
-                </table>
-                </div>
-
-                <h3 style="color:black; margin-top:30px; font-size:20px;">Gaming product</h3>
-                <div id="tablediv">
-                    <table>
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Description</th>
-                            <th>Cost</th>
-                            <th>Rating</th>
-                            <th>Stock</th>
-                            <th>Image</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbodytwo">
-                        <!-- append here -->
-                       
-                    </tbody>
-                </table>
-                `;
-       
-        fetch("https://636e04e8182793016f33bec0.mockapi.io/admin").then((res) => {
-            return res.json()
-        }).then((data) => {
-            console.log(data[0].bookselves)
-            createforbook(data[0].bookselves)
-            createforgame(data[0].gaming)
-            let i=data[0].bookselves.length+data[0].gaming.length;
-            // console.log(i)
-            
-
-        })
-            .catch((err) => {
-                console.log(err)
-            })
-
-
-
-            
-    let tbodyone = document.getElementById("tbodyone")
-    function createforbook(databook) {
-        tbodyone.innerHTML= `
-        ${databook.map((item) => getcard(item.title,item.description,item.price,item.rating,item.image) ).join("")}
-        `
-
-    }
-
-    
-    
-    function getcard(title,desc,price,rating,img) {
-        
-        let card = `
-        <tr>
-         <td>${title}</td>
-         <td>${desc}</td>
-         <td>${price}</td>
-         <td>${rating}</td>
-         <td>In Stock</td>
-         <td><img id="imageofth" src=${img} alt=""></td>
-        </tr>
-        `
-        return card;
-    }
-
-    let tbodytwo = document.getElementById("tbodytwo")
-    function createforgame(datagame) {
-        
-        tbodytwo.innerHTML= `
-        ${datagame.map((item) => getcardtwo(item.tittle,item.des,item.cost,item.rating,item.first_image) ).join("")}
-        `
- 
-    }
-
-    function getcardtwo(title,desc,price,rating,img){
-        
-        let cardtwo = `
-        <tr>
-         <td>${title}</td>
-         <td>${desc}</td>
-         <td>${price}</td>
-         <td>${rating}</td>
-         <td>In Stock</td>
-         <td><img id="imageofth" src=${img} alt=""></td>
-        </tr>
-        `
-        return cardtwo; 
-    }
-    
-    
-    })
-
-   
-
-
- 
+<script src="adminpage.js">
 
 </script>

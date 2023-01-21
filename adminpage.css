@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#up {
+    background-color: #004D40;
+    padding-left: 55px;
+    padding-top: 5px;
+    color: #004D40;
+    font-family: arabic;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+#first {
+    width: 18%;
+    height: 100%;
+    background-color: #004D40;
+    color: white;
+    padding-left: 2%;
+    font-family: arabic;
+    font-size: 18px;
+}
+
+#first h2 {
+    padding-top: 7%;
+
+}
+
+#first h2:hover {
+    cursor: pointer;
+    color: rgb(249, 177, 43);
+}
+
+#first img {
+    display: block;
+    width: 82%;
+    height: 100px;
+    padding-bottom: 25px;
+}
+
+#second {
+    height: 100%;
+    width: 80%;
+    color: black;
+
+}
+
+#mainsection {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+  color:black;
+
+}
+
+#dash {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 200px);
+    gap: 3%;
+    border-radius: 7px;
+
+}
+
+#dash div {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.okok {
+    background-color: #004D40;
+    height: 4100px;
+}
+
+#tablediv {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#tablediv table {
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+    border: 2px solid #004D40;
+}
+thead tr{
+    margin-bottom: 10px;
+}
+
+tbody td{
+    border:2px solid red;
+    gap:10px;
+}
+#imageofth{
+    display: block;
+    width: 100%;
+    height: 70px;
+}
+th,td{
+    background-color: rgb(182, 247, 247);
+    padding: 5px 10px;
+}
+#profilehead{
+    margin-bottom: 20px;
+    background-color: #004D40;
+    color: white;
+    padding:1% 1%;
+    border-radius: 7px;
+}
+#profileimg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#proimgdiv{
+    border-radius: 10px;
+    width: 28%;
+    height: 50%;
+    margin-bottom: 1%;
+}
+#mainofprofile{
+    display: grid;
+    
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+#carddiv{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:3% 3%;
+    background-color: #004D40;
+    color: white;
+    border-radius: 7px;
+}
