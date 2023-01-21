@@ -119,12 +119,6 @@ function search(){
   }
 }
 
-//product click
-function productClickFn(e) {
-    let id = e.currentTarget.dataset.id;
-    localStorage.setItem('productDetailId', id);
-    document.location.href = "details.html"
-}
 
 // sort by price------------------------------------------------------------------------------------------------------
 function sortProd(){

@@ -17,7 +17,7 @@ fetch("gaming.json")
 function renderProduct(data){
       let cardList=`
           <div class="cardList">
-           ${data.map((item)=>productCard(item.first_image,item.tittle,item.des,item.cost,item.rating,item.review)).join('')}
+           ${data.map((item)=>productCard(item.id,item.first_image,item.tittle,item.des,item.cost,item.rating,item.review)).join('')}
           </div>
       `
       productPage.innerHTML=cardList;
@@ -26,8 +26,14 @@ function renderProduct(data){
           item.addEventListener("mouseenter",function(){
             item.setAttribute("src",data[i].hover_image);
             item.style.cursor="pointer";
+            
           })
+          item.addEventListener('click', (e) => {
+            productClickFn(e)
+        })
+          
       })
+      
       hoverImg.forEach((item,i)=>{
         item.addEventListener("mouseleave",function(){
           item.setAttribute("src",data[i].first_image);
@@ -35,11 +41,18 @@ function renderProduct(data){
     })
 }
 
+//product click
+function productClickFn(e) {
+  let id = e.currentTarget.dataset.id;
+  localStorage.setItem('productDetailId', id);
+  document.location.href = "details.html"
+}
+
 // making of each cards
-function productCard(image,title,des,price,rating,rCount){
+function productCard(id,image,title,des,price,rating,rCount){
     let card = `
       <div class="productCard">
-              <img class="productImg" src=${image}>
+              <img  data-id=${id} class="productImg" src=${image}>
               <h4>${title}</h4>
               <p>${des}</p>
               <h4>Rs.${price}</h4>
@@ -60,7 +73,7 @@ RoomBtn.addEventListener("click",function(){
 function renderRoom(data){
       let cardList=`
           <div class="cardList">
-           ${data.map((item)=>productCard(item.hover_image,item.tittle,item.des,item.cost,item.rating,item.review)).join('')}
+           ${data.map((item)=>productCard(item.id,item.hover_image,item.tittle,item.des,item.cost,item.rating,item.review)).join('')}
           </div>
       `
       productPage.innerHTML=cardList;
