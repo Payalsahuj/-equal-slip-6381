@@ -524,17 +524,16 @@ body {
         }
         #firstdiv{
             height:50%;
-            border: 2px solid #0288D1;
-            background-color: #0288D1;
+            border: 2px solid green;
+            background-color: green;
             color: white;
             
         }
         #firstdiv button{
             text-align: center; 
-            padding: 0px 30px; 
             border-radius: 20px; 
             border: none;
-            font-size: 15px;
+            font-size: 30px;
         }
         #firstdiv button:hover{
             cursor: pointer;
@@ -542,19 +541,19 @@ body {
         }
         #firstdiv hr{
             height: 0.2px;
-            background-color: #39b5f8;
+            background-color: rgb(53, 172, 53);
             border: none;
         }
         #firstdiv h3{
-            margin: 35px 30px;
+            margin: 6% 6%;
         }
         #seconddiv{
             height:50%; 
         }
         #seconddiv a{
             display: block;
-            margin-top: 20px;
-            margin: 35px 32px;
+            margin-top: 2%;
+            margin: 7% 6%;
            text-decoration: none;
            color: black;
         }
@@ -566,7 +565,6 @@ body {
         #imgdetail{
             display: grid;
             grid-template-columns: repeat(3,1fr);
-          
             gap: 15px;
             margin-top: 40px;
         }
