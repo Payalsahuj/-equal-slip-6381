@@ -16,7 +16,7 @@ fetch("bookShelv.json")
 function renderProduct(data){
       let cardList=`
           <div class="cardList">
-           ${data.map((item)=>productCard(item.image1,item.title,item.description1,item.price,item.rating[0],item.rating[1])).join('')}
+           ${data.map((item)=>productCard(item.id,item.image1,item.title,item.description1,item.price,item.rating[0],item.rating[1])).join('')}
           </div>
       `
       productPage.innerHTML=cardList;
@@ -26,6 +26,9 @@ function renderProduct(data){
             item.setAttribute("src",data[i].image2);
             item.style.cursor="pointer"
           })
+          item.addEventListener('click', (e) => {
+            productClickFn(e)
+        })
           
       })
       hoverImg.forEach((item,i)=>{
@@ -36,10 +39,10 @@ function renderProduct(data){
 }
 
 // making of each cards
-function productCard(image,title,des,price,rating,rCount){
+function productCard(id, image,title,des,price,rating,rCount){
     let card = `
-      <div class="productCard">
-              <img class="productImg" src=${image}>
+      <div  data-id=${id} class="productCard">
+              <img  data-id=${id} class="productImg" src=${image}>
               <h4>${title}</h4>
               <p>${des}</p>
               <h4>Rs.${price}</h4>
@@ -59,7 +62,7 @@ RoomBtn.addEventListener("click",function(){
 function renderRoom(data){
      let cardList=`
           <div class="cardList">
-           ${data.map((item)=>productCard(item.image2,item.title,item.description1,item.price,item.rating[0],item.rating[1])).join('')}
+           ${data.map((item)=>productCard(item.id,item.image2,item.title,item.description1,item.price,item.rating[0],item.rating[1])).join('')}
           </div>
       `
       productPage.innerHTML=cardList;
@@ -69,6 +72,10 @@ function renderRoom(data){
             item.setAttribute("src",data[i].image1);
             item.style.cursor="pointer"
           })
+
+          item.addEventListener('click', (e) => {
+            productClickFn(e)
+        })
           
       })
       hoverImg.forEach((item,i)=>{
@@ -103,4 +110,11 @@ function search(){
     document.querySelector(".top").innerHTML=`<h1 style="margin:5px 0px">There are no results for ${x}</h1> <p style="font-size:18px">Try again using a different spelling or keywords.</p>`
     productPage.innerHTML="";
   }
+}
+
+//product click
+function productClickFn(e) {
+    let id = e.currentTarget.dataset.id;
+    localStorage.setItem('productDetailId', id);
+    document.location.href = "details.html"
 }
