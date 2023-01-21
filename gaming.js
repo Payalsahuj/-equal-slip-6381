@@ -39,6 +39,13 @@ function renderProduct(data){
           item.setAttribute("src",data[i].first_image);
         })
     })
+    // hovering heart cart---------
+    let hoverHeart = document.querySelectorAll(".addCart");
+    hoverHeart.forEach((item)=>{
+      item.addEventListener("click",function(){
+        item.textContent="🖤";
+      })
+    })
 }
 
 //product click
@@ -100,3 +107,117 @@ ProBtn.addEventListener("click",function(){
     ProBtn.style.border="2px solid";
     RoomBtn.style.border="1px solid"
 })
+// search functionality of web--------------------------------------------------------------------------------
+
+function search(){
+  let x = document.getElementById("searchBox").value;
+  let newData = globalData.filter((item)=>{
+    return item.tittle.toLowerCase().includes(x.toLowerCase());
+  })
+  if(newData.length!=0){
+    document.querySelector("#gaming-menu").innerHTML="";
+    document.querySelector("#descrip").innerHTML="";
+    document.querySelector("#tittle").innerHTML="";
+    document.querySelector("#gaming-menu").innerHTML=`<h1 style="margin:5px 0px">Showing results for ${x}</h1>`
+    document.querySelector("#descrip").innerHTML=` <p style="font-size:18px">We found ${newData.length} products.</p>`;
+    productPage.innerHTML="";
+    renderProduct(newData);
+  }else{
+    document.querySelector("#gaming-menu").innerHTML="";
+    document.querySelector("#descrip").innerHTML="";
+    document.querySelector("#tittle").innerHTML="";
+    document.querySelector("#descrip").innerHTML=` <p style="font-size:18px">Try again using a different spelling or keywords.</p>`;
+    document.querySelector("#gaming-menu").innerHTML=`<h1 style="margin:5px 0px">There are no results for ${x}</h1>`
+    productPage.innerHTML="";
+  }
+}
+
+// sort by price------------------------------------------------------------------------------------------------------
+function sortProd(){
+  let select = document.getElementById("sort").value;
+  if(select=="htl"){
+    globalData.sort((a,b)=> b.cost-a.cost);
+  }
+  if(select=="lth"){
+    globalData.sort((a,b)=> a.cost-b.cost);
+  }
+  if(select=="rating"){
+    globalData.sort((a,b)=> b.rating.length-a.rating.length)
+  }
+  if(select=="name"){
+    globalData.sort((a,b)=>{
+      if (a.tittle>b.tittle) return 1;
+      if (a.tittle<b.tittle) return -1;
+      return 0;
+    })
+  }
+  if(select=="popular"){
+    globalData.sort((a,b)=> b.review-a.review);
+  }
+  
+  productPage.innerHTML="";
+  renderProduct(globalData);
+
+}
+// sorting by category--------------------------------------------------------------------------------------------------
+function sortCat(){
+  let select = document.getElementById("category").value;
+  let newData=globalData;
+  if(select=="desk"){
+    newData = globalData.filter((item)=>item.category=="Gaming desk");
+  }
+  if(select=="chair"){
+    newData = globalData.filter((item)=>item.category=="Gaming chair");
+  }
+  if(select=="bord"){
+    newData = globalData.filter((item)=>item.category=="Pegboard")
+  }
+  if(select=="acc"){
+    newData = globalData.filter((item)=>item.category=="Gaming Accessories")
+  }
+ 
+  productPage.innerHTML="";
+  renderProduct(newData);
+}
+// sortin base on name --------------------------------------------------------------------------
+function sortName(){
+  let select = document.getElementById("size").value;
+  if(select=="atz"){
+    globalData.sort((a,b)=>{
+      if (a.tittle<b.tittle) return -1;
+      return 0;
+    })
+  }
+  if(select=="zta"){
+    globalData.sort((a,b)=>{
+      if (b.tittle>a.tittle) return 1;
+      if (b.tittle<a.tittle) return -1;
+      return 0;
+    })
+  }
+  productPage.innerHTML="";
+  renderProduct(globalData);
+}
+// sorting price --------------------------------------------------------------------------------------------------
+function sortPrice(){
+  let select = document.getElementById("price").value;
+  let newData=globalData;
+  if(select=="1999"){
+    newData = globalData.filter((item)=>item.cost<=1999);
+  }
+  if(select=="2-4"){
+    newData = globalData.filter((item)=>item.cost>=2000&&item.cost<=3999);
+  }
+  if(select=="4-6"){
+    newData = globalData.filter((item)=>item.cost>=4000&&item.cost<=5999);
+  }
+  if(select=="6-8"){
+    newData = globalData.filter((item)=>item.cost>=6000&&item.cost<=7999);
+  }
+  if(select=="8"){
+    newData = globalData.filter((item)=>item.cost>8000);
+  }
+  productPage.innerHTML="";
+  renderProduct(newData);
+}
+

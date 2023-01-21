@@ -103,6 +103,9 @@ body {
             width: 60%;
         }
         /* filter section of web----------------------------------------------------------------- */
+        .filterProduct button:hover{
+            cursor: pointer;
+        }
         .filterProduct{
             width: 89%;
             display: flex;
@@ -270,6 +273,8 @@ body {
        }
       .footerfirst{
         width: 25%;
+        display: flex;
+        flex-direction: column;
       }
       .footersecond{
         display: flex;
@@ -332,3 +337,71 @@ body {
         align-items: center;
         text-align: center;
     }
+ 
+    /* media query for wb page-=---------------------------------------------------------------------- */
+    @media screen and (min-width:600px) and (max-width:900px) {
+        /* Here Write all the necessery styles for Medium Screen size  */
+        /* for product render---- */
+        .cardList{
+            grid-template-columns: repeat(3,1fr);
+        }
+        .filterProduct{
+            flex-direction: column;
+        }
+        .top-child{
+            width: 100%;
+         }
+       /* botttom 1st--------------------------------------------------------------------- */
+       .bottom-child{
+        grid-template-columns: repeat(2,1fr);
+       }
+       /* bottom 2nd ---------------------------------------------------- */
+       .second-bottom{
+        grid-template-columns: repeat(2,1fr);
+       }
+       
+      }
+
+      @media screen and (min-width:0px) and (max-width:599px) {
+        /* Here Write all the necessery styles for small Screen size  */
+        /* for product render---- */
+        .cardList{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .filterProduct{
+            flex-direction: column;
+        }
+       /* top div-------------------------------------------------------- */
+        .top-child{
+           width: 100%;
+        }
+        /* mim section of web-------------------------------------------------- */
+        .mid-child-head{
+           flex-direction: column;
+        }
+        .mid-child-bottom{
+           flex-direction: column;
+        }
+        .mid button{
+           margin: 10px;
+        }
+        /* botttom 1st--------------------------------------------------------------------- */
+        .bottom-child{
+        grid-template-columns: repeat(1,1fr);
+         }
+        /* bottom 2nd ---------------------------------------------------- */
+        .second-bottom{
+            grid-template-columns: repeat(1,1fr);
+           }
+           /* fooooter section------------------------------------------------- */
+           .footer{
+            flex-direction: column;
+           }
+           .footerfirst{
+           width: 100%;
+            flex-direction: row;
+          }
+          .footersecond{
+            width: 100%;
+          }
+      }
