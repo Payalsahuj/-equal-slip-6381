@@ -2,7 +2,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-style: italic;
         }
        
         p{
@@ -157,6 +156,9 @@
         }
         .cardList p{
             margin: 10px 0px;
+        }
+        .addCart:hover{
+            cursor: pointer;
         }
         /* mid section of web------------------------------------------------------------------------ */
         .mid{
