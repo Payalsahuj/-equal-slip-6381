@@ -36,6 +36,14 @@ function renderProduct(data){
           item.setAttribute("src",data[i].image1);
         })
     })
+    // hovering heart cart---------
+    let hoverHeart = document.querySelectorAll(".addCart");
+    hoverHeart.forEach((item)=>{
+      item.addEventListener("click",function(){
+        item.textContent="🖤";
+      })
+    })
+    
 }
 
 // making of each cards
@@ -112,9 +120,3 @@ function search(){
   }
 }
 
-//product click
-function productClickFn(e) {
-    let id = e.currentTarget.dataset.id;
-    localStorage.setItem('productDetailId', id);
-    document.location.href = "details.html"
-}

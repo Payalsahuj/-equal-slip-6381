@@ -161,6 +161,9 @@ body {
         .cardList p{
             margin: 10px 0px;
         }
+        .addCart:hover{
+            cursor: pointer;
+        }
         /* mid section of web------------------------------------------------------------------------ */
         .mid{
             width: 89%;
