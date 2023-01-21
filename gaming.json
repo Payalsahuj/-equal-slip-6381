@@ -1,6 +1,6 @@
 [
       {     
-            "id":0,
+            "id":17,
             "tittle":"UTESPELARE",
             "des":"Gaming desk,160x80 cm(63x31 1/2)",
             "cost":11990,
@@ -12,7 +12,7 @@
             "3rd_image":"https://www.ikea.com/in/en/images/products/utespelare-gaming-desk-black__0997502_pe822689_s5.jpg?f=xl"
       },
       {     
-            "id":1,
+            "id":18,
             "tittle":"MATCHSPEL",
             "des":"Gaming chair",
             "cost":14990,
@@ -24,7 +24,7 @@
             "3rd_image":"https://www.ikea.com/in/en/images/products/matchspel-gaming-chair-bomstad-white__0984829_pe816435_s5.jpg?f=s"
       },
       {      
-            "id":2,
+            "id":19,
             "tittle":"UPPSPEL",
             "des":"Table top cm(70 7/8)",
             "cost":8990,
@@ -36,7 +36,7 @@
             "3rd_image":"https://www.ikea.com/in/en/images/products/uppspel-table-top-black__0984838_pe816443_s5.jpg?f=xxxs"
       },
       {
-            "id":3,
+            "id":20,
             "tittle":"UPPSPEL",
             "des":"pegboard, 76x56 cm (29 7/8x22)",
             "cost":1600,
@@ -48,7 +48,7 @@
             "3rd_image":"https://www.ikea.com/in/en/images/products/uppspel-pegboard-black__1007009_pe825938_s5.jpg?f=xxxs"
       },
       { 
-            "id":4,
+            "id":21,
             "tittle":"STYRSPEL",
             "des":"Gaming chair",
             "cost":22990,
@@ -61,7 +61,7 @@
       },
 
       {
-            "id":5,
+            "id":22,
             "tittle":"UTESPELARE / HELMER",
             "des":"Gaming chair",
             "cost":26970,
@@ -74,7 +74,7 @@
       },
 
       {
-            "id":6,
+            "id":23,
             "tittle":"LANESPELARE",
             "des":"Accessories stand",
             "cost":1590,
@@ -87,7 +87,7 @@
       },
 
       {
-            "id":7,
+            "id":24,
             "tittle":"HUVUDSPELARE",
             "des":"Gaming chair",
             "cost":6990,
@@ -100,7 +100,7 @@
       },
 
       {
-            "id":8,
+            "id":25,
             "tittle":"UTESPELARE",
             "des":"Gaming chair",
             "cost":10990,
@@ -113,7 +113,7 @@
       },
 
       {
-            "id":9,
+            "id":26,
             "tittle":"LANESPELARE",
             "des":"Ring light with phone holder",
             "cost":3490,
@@ -126,7 +126,7 @@
       },
 
       {
-            "id":10,
+            "id":27,
             "tittle":"LANESPELARE",
             "des":"Neck pillow",
             "cost":699,
@@ -139,7 +139,7 @@
       },
 
       {
-            "id":11,
+            "id":28,
             "tittle":"FREDDE",
             "des":"Gaming desk 140/185x74x146 cm (1/8/72 7/8x29 1/8x5 1/2)",
             "cost":19990,
