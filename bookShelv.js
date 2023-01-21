@@ -36,6 +36,13 @@ function renderProduct(data){
           item.setAttribute("src",data[i].image1);
         })
     })
+    // hovering heart cart---------
+    let hoverHeart = document.querySelectorAll(".addCart");
+    hoverHeart.forEach((item)=>{
+      item.addEventListener("click",function(){
+        item.textContent="🖤";
+      })
+    })
 }
 
 // making of each cards
