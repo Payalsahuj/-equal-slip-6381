@@ -11,37 +11,91 @@
 </head>
 
 <body>
-  <script src="./shoppinglist.js"></script>
-  <div class="heading">
-    <h3>Shopping cart</h3>
+  
+  <div id="navall">
+    <nav id="secondnav">
+      <img id="menunavimg" src="./image/icons8-menu-rounded-30.png" style="width: 35px; height: 40px; position: fixed;"
+        alt="">
+      <img src="./image/DECOR.png"
+        style="height: 60px; width: 110px; border-radius: 7px; margin-right: 7%; margin-left: 8%;" alt="">
+      <div class="box">
+        <img src="./image/icons8-search-16.png" alt="">
+        <input type="text">
+      </div>
+
+      <div id="secondbox" class="box secondbox">
+        <img src="./image/icons8-user-male-64.png" alt="">
+        <h3 id="log">Hej! Log in or sign up</h3>
+      </div>
+
+      <img src="./image/icons8-shuttle-bus-50.png" style="width: 50px; height: 40px; padding-right: 1.5%;" alt="">
+      <img src="./image/icons8-add-to-cart-64.png" style="width: 40px; height: 35px;" alt="">
+      <span id="count"></span>
+    </nav>
+
+    <nav id="thirdnav">
+      <h3 id="product">Products</h3>
+      <h3>Rooms</h3>
+      <h3>New at L.DECOR</h3>
+      <h3>Offers</h3>
+    </nav>
   </div>
-  <div class="main-div">
-    <div class="left-div">
-      <div><img src="https://secure.ikea.com/in/en/images/products/varby-corner-shelf-unit__0653925_PE708165_S3.JPG" />
+  <div class="heading">
+    <h3>Shopping cart</h3><img src="https://order.ikea.com/in/en/checkout/static/media/print-24.3eb25bf2.svg" />
+
+  </div>
+  <div id="main"></div>
+  <div class="bottom-div">
+    <div>
+
+    </div>
+    <div>
+      <div>Subtotal</div>
+      <div>Rs.1,20,180.00</div>
+    </div>
+    <div></div>
+  </div>
+  <div class="des">How would you like to receive your order?
+  </div>
+  <div class="home">
+    <div class="del">
+      <div>
+        <img src="https://order.ikea.com/in/en/checkout/static/media/ws-home-delivery-blue.ff16e8a8.svg" />
       </div>
-      <div class="left">
-        <div id="title">
-          VARBY</div>
-        <p>Corner shelf unit<br>medium brown<br>53x155 cm (20 7/8x61 ")<br> 004.175.79</p>
+      <div>Home delivery</div>
+    </div>
+    <div class="del2">
+      <div><img src="https://order.ikea.com/in/en/checkout/static/media/ws-click-and-collect.6cad58e4.svg" /></div>
+      <div>Click collect</div>
+    </div>
+
+  </div>
+  <div class="res"> </div>
+  <div class="div-bot">
+    <div class="more">
+      <div>
+        <img src="https://www.ikea.com/images/delivery-2c377c3cc69640f749013836110d40ad.jpg" />
+      </div>
+      <div class="rht">
+        <div><label><b>Our Delivery Service</b></label>Safe & contact-less delivery according <br>to government permission.</div>
+        <div>More info</div>
       </div>
     </div>
-    <div class="right-div">
-      <div>
-        <div class="total">Rs.67,830.00</div>
-        <div>Rs.3,990.00 / pieces</div>
-      </div>
-      <div>
-        <div><button><span><img
-                src="https://order.ikea.com/in/en/checkout/static/media/remove-thin-24.16c1cc7a.svg" /></span></button>
-        </div>
-        <div class="sel-div">
-          <select>
-            <option value="1" selected>1</option>
-          </select>
-        </div>
+    <div class="more">
+      <div><img src="https://www.ikea.com/images/delivery-2c377c3cc69640f749013836110d40ad.jpg" /></div>
+      <div class="rht">
+        <div><label><b>Our Delivery Service</b></label>Safe & contact-less delivery according <br>to government permission.</div>
+        <div>More info</div>
       </div>
     </div>
+    <div class="more">
+      <div><img src="https://www.ikea.com/images/delivery-2c377c3cc69640f749013836110d40ad.jpg" /></div>
+        <div class="rht">
+          <div><label><b>Our Delivery Service</b></label>Safe & contact-less delivery according <br>to government permission.</div>
+          <div>More info</div>
+        </div>
+      </div>
   </div>
 </body>
-
+<script src="./shoppinglist.js"></script>
 </html>

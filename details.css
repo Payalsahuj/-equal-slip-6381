@@ -22,7 +22,17 @@ body {
 .rightdiv {
     width: 32%;
 }
-
+#count {
+    position: absolute;
+    right: 48px;
+    top: 32px;
+    background-color: aquamarine;
+    color: red;
+    width: 20px;
+    border-radius: 22px;
+    align-items: center;
+    text-align: center;
+}
 
 .rightdiv>div:nth-of-type(1) {
     font-weight: 700;
@@ -187,7 +197,7 @@ body {
     flex-flow: column;
 }
 
-.stars-count{
+.stars-countb{
     margin-top: 21%;
 }
 
@@ -198,3 +208,60 @@ body {
   font-weight: bold;
 } 
 
+/* nav */
+    
+#secondnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.box {
+    width: 600px;
+    height: 8px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(226, 229, 233);
+}
+
+.box>img {
+    font-size: 20px;
+    width: 27px;
+    padding-right: 10px;
+}
+
+.box>input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+
+    background-color: rgb(226, 229, 233);
+}
+
+.secondbox {
+    width: 265px;
+    background-color: white;
+}
+
+.secondbox:hover {
+    background-color: rgb(226, 229, 233);
+    cursor: pointer;
+}
+
+#thirdnav {
+    padding-left: 150px;
+    margin-top: 20px;
+    display: flex;
+   
+}
+#thirdnav h3:hover{
+    cursor: pointer;
+}
+#thirdnav h3{
+    margin-right: 40px;
+}

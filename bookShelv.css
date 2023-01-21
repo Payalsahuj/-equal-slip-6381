@@ -1,8 +1,11 @@
+body {
+    font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui, sans-serif !important;
+    color: #302c2c;
+}
   * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-style: italic;
         }
        
         p{
@@ -315,5 +318,14 @@
       }
       
      
-      
-     
+      #count {
+        position: absolute;
+        right: 48px;
+        top: 32px;
+        background-color: aquamarine;
+        color: red;
+        width: 20px;
+        border-radius: 22px;
+        align-items: center;
+        text-align: center;
+    }

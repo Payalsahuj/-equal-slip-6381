@@ -1,4 +1,7 @@
-
+body {
+    font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui, sans-serif !important;
+    color: #302c2c;
+}
         * {
             margin: 0;
             padding: 0;
