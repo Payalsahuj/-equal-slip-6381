@@ -13,17 +13,28 @@ fetch("bookShelv.json")
     }).catch((err) => console.log(err));
 
 // Rendering product data
-function renderProduct(data) {
-    let cartArr = JSON.parse(localStorage.getItem('cart')) || []
-    document.getElementById('count').innerText = cartArr.length;
-    let cardList = `
+function renderProduct(data){
+      let cardList=`
           <div class="cardList">
-           ${data.map((item) => productCard(item.id, item.image1, item.title, item.description1, item.price, item.rating[0], item.rating[1])).join('')}
+           ${data.map((item)=>productCard(item.image1,item.title,item.description1,item.price,item.rating[0],item.rating[1])).join('')}
           </div>
       `
-    productPage.innerHTML = cardList;
-
-    let allProducts = document.getElementsByClassName('productCard');
+      productPage.innerHTML=cardList;
+      let hoverImg=document.querySelectorAll(".productImg");
+      hoverImg.forEach((item,i)=>{
+          item.addEventListener("mouseenter",function(){
+            item.setAttribute("src",data[i].image2);
+            item.style.cursor="pointer"
+          })
+          
+      })
+      hoverImg.forEach((item,i)=>{
+        item.addEventListener("mouseleave",function(){
+          item.setAttribute("src",data[i].image1);
+        })
+    })
+    
+     let allProducts = document.getElementsByClassName('productCard');
 
     for (let item of allProducts) {
         item.addEventListener('click', (e) => {
@@ -31,6 +42,7 @@ function renderProduct(data) {
         })
     }
 }
+
 // product click
 function productClickFn(e) {
     let id = e.currentTarget.dataset.id;
@@ -52,6 +64,40 @@ function productCard(id, image, title, des, price, rating, rCount) {
     `
     return card;
 }
-// hovering image on product display page ---------------------------------------------------------------------
+// hovering image on product display page for button room and---------------------------------------------------------------------
+let RoomBtn = document.getElementById("roomFilter");
+RoomBtn.addEventListener("click",function(){
+    renderRoom(globalData);
+    ProBtn.style.border="1px solid";
+    RoomBtn.style.border="2px solid"
+})
+function renderRoom(data){
+     let cardList=`
+          <div class="cardList">
+           ${data.map((item)=>productCard(item.image2,item.title,item.description1,item.price,item.rating[0],item.rating[1])).join('')}
+          </div>
+      `
+      productPage.innerHTML=cardList;
+      let hoverImg=document.querySelectorAll(".productImg");
+      hoverImg.forEach((item,i)=>{
+          item.addEventListener("mouseenter",function(){
+            item.setAttribute("src",data[i].image1);
+            item.style.cursor="pointer"
+          })
+          
+      })
+      hoverImg.forEach((item,i)=>{
+        item.addEventListener("mouseleave",function(){
+          item.setAttribute("src",data[i].image2);
+        })
+    })
+}
 
-
+// hovering image on product display page for button product ----------------------------------------------------------
+let ProBtn = document.getElementById("productFilter");
+ProBtn.addEventListener("click",function(){
+   
+    renderProduct(globalData);
+    ProBtn.style.border="2px solid";
+    RoomBtn.style.border="1px solid"
+})
