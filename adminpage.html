@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #up {
+            background-color: #004D40;
+            padding-left: 55px;
+            padding-top: 5px;
+            color: #004D40;
+            font-family: arabic;
+        }
+
+        #main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+        }
+
+        #first {
+            width: 18%;
+            height: 100%;
+            background-color: #004D40;
+            color: white;
+            padding-left: 2%;
+            font-family: arabic;
+            font-size: 18px;
+        }
+
+        #first h2 {
+            padding-top: 7%;
+        }
+
+        #first h2:hover {
+            cursor: pointer;
+            color: rgb(249, 177, 43);
+        }
+
+        #first img {
+            display: block;
+            width: 82%;
+            height: 100px;
+            padding-bottom: 25px;
+        }
+
+        #second {
+            height: 100%;
+            width: 80%;
+            color: black;
+
+        }
+
+        #mainsection {
+            width: 90%;
+            margin: auto;
+            margin-top: 5%;
+            color: rgb(118, 115, 115);
+
+        }
+
+        #dash {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 200px);
+            gap: 3%;
+            border-radius: 7px;
+
+        }
+
+        #dash div {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .okok {
+            background-color: #004D40;
+            height: 400px;
+        }
+
+        #tablediv {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #tablediv table {
+            width: 100%;
+            text-align: left;
+            font-size: 25px;
+            border: 2px solid #004D40;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="up">
+        <h1>h</h1>
+    </div>
+    <div id="main">
+        <div id="first">
+            <img src="./image/Ldecor.final.png" alt="">
+            <h2 id="Dashboard">Dashboard</h2>
+            <hr>
+            <h2 id="Product">Products</h2>
+            <hr>
+            <h2 id="profile">Admin Profile</h2>
+            <hr>
+            <h2 id="order">Order Details</h2>
+            <hr>
+            <h2 id="create">Create Profile</h2>
+            <hr>
+            <div class="okok"></div>
+        </div>
+        <div id="second">
+            <div id="mainsection">
+                <h2 style="font-size: 25px;">Dashboard</h2>
+                <div id="dash">
+                    <!-- No of product -->
+                    <div style="background-color: orange;  display: flex; padding: 20px; align-items: center;">
+                        <h3 style="font-size: 35px; color: rgb(128, 130, 132);">Number of Products <span></span> </h3>
+                        <img src="./image/icons8-open-box-50.png" style="width: 150px; height: 115px;" alt="">
+                    </div>
+                    <!-- variety -->
+                    <div
+                        style="background-color: rgb(25, 192, 25);  display: flex; padding: 20px; align-items: center;">
+                        <h3 style="font-size: 35px; color: rgb(128, 130, 132);">Total Product</h3><img
+                            style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt="">
+                    </div>
+                    <!-- Best sellers  -->
+                    <div
+                        style="background-color: rgb(192, 97, 25);  display: flex; padding: 20px; align-items: center;">
+                        <h3 style="font-size: 35px; color: rgb(128, 130, 132);">Best Sellers</h3><img
+                            style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt="">
+                    </div>
+                    <!--  -->
+                </div>
+                <img style="display: block; width: 90%; margin-top: 30px;" src="./image/Slide72.jpeg" alt="">
+
+
+                <!-- practice -->
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let dashboard = document.getElementById("Dashboard");
+    let product = document.getElementById("Product");
+    let profile = document.getElementById("profile");
+    let order = document.getElementById("order");
+    let create = document.getElementById("create");
+    let mainsection = document.getElementById("mainsection");
+    let baseserverurl=`https://636e04e8182793016f33bec0.mockapi.io/admin`
+    dashboard.addEventListener("click", () => {
+        mainsection.innerHTML = null;
+        mainsection.innerHTML = `
+        <h2>Dashboard</h2>
+                <div id="dash">
+                    <!-- No of product -->
+                    <div style="background-color: orange;  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Number of Products <span></span> </h3><img src="./image/icons8-open-box-50.png" style="width: 150px; height: 115px;" alt=""></div>
+                    <!-- variety -->
+                    <div style="background-color: rgb(25, 192, 25);  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Total Product</h3><img style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt=""></div>
+                    <!-- Best sellers  -->
+                    <div style="background-color: rgb(192, 97, 25);  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Best Sellers</h3><img style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt=""></div>
+                    <!--  -->
+                </div>
+                <img style="display: block; width: 90%; margin-top: 30px;" src="./image/Slide72.jpeg" alt="">
+        `
+    })
+
+    product.addEventListener("click", () => {
+        mainsection.innerHTML = `
+        <h2>Products</h2>
+        <h3>BookSelves product</h3>
+                <div id="tablediv">
+                    <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Cost</th>
+                            <th>Rating</th>
+                            <th>Stock</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyone">
+                        <!-- append here -->
+                        
+                    </tbody>
+                </table>
+                </div>
+
+                <h3>Gaming product</h3>
+                <div id="tablediv">
+                    <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Cost</th>
+                            <th>Rating</th>
+                            <th>Stock</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodytwo">
+                        <!-- append here -->
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+                `;
+       
+        fetch("https://636e04e8182793016f33bec0.mockapi.io/admin").then((res) => {
+            return res.json()
+        }).then((data) => {
+            console.log(data)
+            createforbook(data[0].bookselves)
+            createforgame(data[0].gaming)
+
+        })
+            .catch((err) => {
+                console.log(err)
+
+            })
+
+
+
+            
+    let tbodyone = document.getElementById("tbodyone")
+    function createforbook(databook) {
+        console.log(databook)
+        tbodyone.innerHTML= `
+        ${databook.map((item) => getcard(item.title,item.description,item.price,item.rating,item.image) ).join("")}
+        `
+
+    }
+    function getcard(title,desc,price,rating,img) {
+        let card = `
+        <tr>
+         <th>${title}</th>
+         <th>${desc}</th>
+         <th>${price}</th>
+         <th>${rating}</th>
+         <th>In Stock</th>
+         <th>${baseserverurl}${img}</th>
+        </tr>
+        `
+        return card;
+    }
+
+
+
+    function createforgame(datagame) {
+        console.log(datagame)
+    }
+    })
+
+</script>
