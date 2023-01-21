@@ -43,7 +43,7 @@ function renderProduct(data){
         item.textContent="🖤";
       })
     })
-    
+
 }
 
 // making of each cards
