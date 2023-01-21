@@ -314,7 +314,7 @@
         data.birthdate!==""&&data.gender!==""&&data.postcode!==""&&
         data.email!==""&&data.preferred!==""&&data.password!==""&&
         c0.checked==true&&maincheck.checked==true&&data.password.length>=8&&
-        data.password.length>=6&&data.mobile.length==10&&data.postcode==6){
+        data.password.length>=6&&data.mobile.length>=10&&data.postcode>=6){
              first_err.innerHTML=null;
              surname_err.innerHTML=null;
              mobile_err.innerHTML=null;
@@ -335,11 +335,11 @@
             data.firstname==""?first_err.innerHTML="*Your first name is required.":first_err.innerHTML=null;
             data.surname==""?surname_err.innerHTML="*Your Surname is required.":surname_err.innerHTML=null;
             data.mobile==""?mobile_err.innerHTML="*Your Mobile is required.":mobile_err.innerHTML=null;
-            data.mobile.mobile!==10?mobile_err.innerHTML="*Mobile  should be 6 digits":mobile_err.innerHTML=null;
+            data.mobile.length<10?mobile_err.innerHTML="*Mobile  should be 6 digits":mobile_err.innerHTML=null;
             data.birthdate==""?birth_err.innerHTML="*Your Birthdate is required.":birth_err.innerHTML=null;
             data.gender==""?gender_err.innerHTML="*Your Gender is required.":gender_err.innerHTML=null;
             data.postcode==""?post_err.innerHTML="*Your Post Code is required.":post_err.innerHTML=null;
-            data.postcode.length!==6?post_err.innerHTML="*Post Code  should be 6 digits required.":post_err.innerHTML=null;
+            data.postcode.length<6?post_err.innerHTML="*Post Code  should be 6 digits required.":post_err.innerHTML=null;
             data.email==""?email_err.innerHTML="*Your Email is required.":email_err.innerHTML=null;
             data.preferred==""?pref_err.innerHTML="*Your preferred is required.":pref_err.innerHTML=null;
             data.password==""?pass_err.innerHTML="*Your Password is required.":pass_err.innerHTML=null;
