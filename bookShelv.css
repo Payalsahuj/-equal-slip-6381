@@ -8,10 +8,6 @@ body {
             box-sizing: border-box;
         }
        
-        p{
-            color: rgb(125, 128, 129);
-            font-size: 15px;
-        }
         html, body{
             overflow-x: hidden;
             height: 100%;
