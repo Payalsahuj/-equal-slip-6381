@@ -45,3 +45,8 @@ function load(){
    </div>
  </div> </div>`
   }
+
+
+  function toPayment() {
+    document.location.href="deliveryinfo.html"
+  }
