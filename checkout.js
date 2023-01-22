@@ -9,7 +9,6 @@ function load(){
     document.getElementById("bottom-total").innerText = `Rs. ${finalTotal}`;
     document.getElementById("con").innerHTML = `${ database.map(x=> getItem(x)).join("")}`
     let deliveryFee = database.length * 20;
-    document.getElementById("df").innerText = `Rs. ${deliveryFee}`;
     document.getElementById("bdf").innerText = `Rs. ${deliveryFee}`;
 
 
@@ -35,7 +34,7 @@ function load(){
  <div class="right-div">
    <div>
      <div class="total font">Rs.${+item.price * +(item.quan ?item.quan:1 )}</div>
-     <div id="df">Rs. 20/ pieces</div>
+     <div id="df">Rs. 20/piece</div>
    </div>
    <div>
      <div class="remove"><img
