@@ -139,3 +139,125 @@ th,td{
     color: white;
     border-radius: 7px;
 }
+
+
+
+
+
+
+
+
+
+
+#second {
+    height: 100%;
+    width: 80%;
+    color: black;
+    
+}
+
+.secondfirst{
+    width:100%;
+    height:30px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #004D40;
+  
+}
+.secondmid{
+    display: flex;
+}
+.left{
+width:30%; 
+text-align: center;
+padding-bottom: 50px;
+
+}
+
+#form span{
+color:red;
+font-size:10px;
+font-weight: bold;
+}
+.check{
+width: 20px;
+height: 20px;
+accent-color: #004D40;
+border: 3px solid #004D40;
+margin-top:20px;
+cursor: pointer;
+}
+#gender{
+width:40%;
+height:40px;
+border:2px solid #004D40;
+border-radius: 10px;
+outline: none;
+background: transparent;
+font-size: 16px;
+color:grey
+}
+
+#gender option{
+width:200px;
+height:40px;
+border:2px solid #004D40;
+border-radius: 10px;
+outline: none;
+background: transparent;
+font-size: 16px;
+color:rgb(12, 11, 11)
+}
+.user-box input{
+width:90%;
+padding:10px 6px;
+font-size:16px;
+color:#004D40;
+/* margin-bottom: 30px; */
+border:2px solid #004D40;
+border-radius: 10px;
+outline: none;
+background: transparent;
+}
+.user-box input:focus {
+top:-40;
+border:2px solid #004D40;
+border-bottom: 4px solid #004D40;
+outline: none;
+background: transparent;
+font-size: 12px;
+
+} 
+.submit{
+margin-top:30px;
+font-size: 20px;
+width:90%;
+height:50px;
+border-radius: 20px;
+color:white;
+background-color: #004D40;
+cursor: pointer;
+}
+.check-section{
+display: flex;
+}
+.checkbox_p1{
+width:40px;
+
+}
+.user-box {
+position:relative;
+margin-bottom: 20px;
+}
+#form{
+border: 5px solid #004D40;
+padding: 10%;
+padding-left: 20%;
+border-radius: 20px;
+
+}
+.checklbl{
+margin-left: 5%;
+font-size:20px;
+}
