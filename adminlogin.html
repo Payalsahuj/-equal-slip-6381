@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin L.DECOR</title>
     <link rel="stylesheet" href="./adminlogin.css">
     <script src="https://kit.fontawesome.com/af84249d9e.js" crossorigin="anonymous"></script>
 </head>
@@ -24,7 +24,7 @@
             <span>and</span>
             <span>Privacy Policy</span>
             <div class="lastdata">
-                © Inter IKEA Systems B.V. 1999-2023
+                © Inter L.DECOR Systems B.V. 1999-2023
             </div>
            </div>
         </div>
@@ -96,7 +96,7 @@ function fetchdata(user){
         let flag=false;
          let detail=""
         data.forEach((el)=>{
-          if(el.email==user.email&&el.password==user.password){
+          if((el.email==user.email&&el.password==user.password)||(el.mobile==user.email&&el.password==user.password)){
             flag=true;
            detail=el;
 
