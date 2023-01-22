@@ -423,4 +423,7 @@ create.addEventListener("click",()=>{
 })
 
 
+let orderdata=JSON.parse(localStorage.getItem("orderdata")) || []
+
+
 
