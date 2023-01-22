@@ -171,7 +171,7 @@ secondbox.addEventListener("click", () => {
 
 let cut4 = document.getElementById("cut4")
 cut4.addEventListener("click", () => {
-
+    console.log("ok")
     leftslidermenu.style.display = "none";
 })
 
