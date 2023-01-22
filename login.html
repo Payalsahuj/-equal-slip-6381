@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>L.DECOR</title>
     <link rel="stylesheet" href="./login.css">
     <script src="https://kit.fontawesome.com/af84249d9e.js" crossorigin="anonymous"></script>
 </head>
@@ -24,7 +24,7 @@
                 You can now login with an OTP we will send on your email address or verified mobile number.
                 <br>
                 <br>
-                Access your IKEA account using your email address to add and verify your mobile number.
+                Access your L.DECOR account using your email address to add and verify your mobile number.
             </p>
            </div>
             <div class="leftspace"></div>
@@ -34,7 +34,7 @@
             <span>and</span>
             <span>Privacy Policy</span>
             <div class="lastdata">
-                © Inter IKEA Systems B.V. 1999-2023
+                © Inter L.DECOR Systems B.V. 1999-2023
             </div>
            </div>
         </div>
@@ -64,7 +64,7 @@
             </div>
             <div class="rightspace"></div>
             <div class="create">
-                <h3>Do not have an IKEA account? Create one now:</h3>
+                <h3>Do not have an L.DECOR account? Create one now:</h3>
                 <br>
                 <br>
                 <a href="./create.html">
@@ -113,7 +113,7 @@ function fetchdata(user){
         let flag=false;
          let detail=""
         data.forEach((el)=>{
-          if(el.email==user.email&&el.password==user.password){
+          if((el.email==user.email&&el.password==user.password)||(el.mobile==user.email&&el.password==user.password)){
             flag=true;
            detail=el;
 
