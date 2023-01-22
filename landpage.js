@@ -262,6 +262,15 @@ else{
 
 
 
+    document.addEventListener("scroll",()=>{
+        leftslidermenu.style.display = "none";
+        sidebarcarddetails.style.display = "none";
+        sidebarmenu.style.display = "none";
+        sidebarmenuproduct.style.display = "none";
+    })  
+
+
+
 
 
 

@@ -1,3 +1,4 @@
+
 let dashboard = document.getElementById("Dashboard");
 let product = document.getElementById("Product");
 let profile = document.getElementById("profile");
@@ -5,6 +6,7 @@ let order = document.getElementById("order");
 let create = document.getElementById("create");
 let mainsection = document.getElementById("mainsection");
 let noofproduct=document.getElementById("noofproduct")
+let noofbestseller=document.getElementById("noofbestseller")
 
 fetch("https://636e04e8182793016f33bec0.mockapi.io/admin").then((res) => {
        return res.json()
@@ -31,7 +33,7 @@ dashboard.addEventListener("click", () => {
                 <!-- variety -->
                 <div style="background-color: rgb(25, 192, 25);  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Total Product 2</h3><img style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt=""></div>
                 <!-- Best sellers  -->
-                <div style="background-color: rgb(192, 97, 25);  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Best Sellers</h3><img style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt=""></div>
+                <div style="background-color: rgb(234, 145, 78);  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Best Sellers <span id="noofbestseller"></span></h3><img style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt=""></div>
                 <!--  -->
             </div>
             <img style="display: block; width: 90%; margin-top: 30px;" src="./image/Slide72.jpeg" alt="">
@@ -40,7 +42,7 @@ dashboard.addEventListener("click", () => {
 })
 
 product.addEventListener("click", () => {
-    
+    mainsection.innerHTML = null;
     mainsection.innerHTML = `
     <h2>Products</h2>
     <h3>BookSelves product</h3>
@@ -86,12 +88,9 @@ product.addEventListener("click", () => {
     fetch("https://636e04e8182793016f33bec0.mockapi.io/admin").then((res) => {
         return res.json()
     }).then((data) => {
-        console.log(data[0].bookselves)
+        
         createforbook(data[0].bookselves)
         createforgame(data[0].gaming)
-        let i=data[0].bookselves.length+data[0].gaming.length;
-        // console.log(i)
-        
 
     })
         .catch((err) => {
@@ -112,7 +111,7 @@ function createforbook(databook) {
 
 
 function getcard(title,desc,price,rating,img) {
-    
+  
     let card = `
     <tr>
      <td>${title}</td>
@@ -125,6 +124,9 @@ function getcard(title,desc,price,rating,img) {
     `
     return card;
 }
+
+
+
 
 let tbodytwo = document.getElementById("tbodytwo")
 function createforgame(datagame) {
@@ -424,6 +426,71 @@ create.addEventListener("click",()=>{
 
 
 let orderdata=JSON.parse(localStorage.getItem("orderdata")) || []
+console.log(orderdata)
+order.addEventListener("click",()=>{
+    mainsection.innerHTML = null;
+    mainsection.innerHTML = `
+    <h2>Products</h2>
+    <h3>Ordered records of people</h3>
+            <div id="tablediv">
+                <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>State</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyoneorder">
+                    <!-- append here -->
+                    
+                </tbody>
+            </table>
+           `
+
+           let tbodyoneorder=document.getElementById("tbodyoneorder");
+           tbodyoneorder.innerHTML=`${orderdata.map((item)=> getorder(item.firstname,item.surname,item.address,item.email,item.mobile,item.state,item.country)).join("")}`
+          
+           function getorder(fname,lname,address,email,mobile,state,country){
+            let cardorder=`
+            <tr >
+            <td >${fname} ${lname}</td>
+            <td>${address}</td>
+            <td>${email}</td>
+            <td>${mobile}</td>
+            <td>${state}</td>
+            <td>${country}</td>
+            </tr>
+            `
+            return cardorder;
+           }
+})
 
 
+
+
+fetch("https://636e04e8182793016f33bec0.mockapi.io/admin").then((res) => {
+    return res.json()
+}).then((data) => {
+    let a=0;
+    data[0].bookselves.forEach((item)=>{
+        if(item.rating.length==5){
+            a++; 
+        }
+       
+    })
+    let b=0;
+    data[0].gaming.forEach((item)=>{
+        if(item.rating.length==5){
+            b++; 
+        }
+       
+    })
+    let h=a+b
+    noofbestseller.innerText=h;
+
+})
 
