@@ -1,60 +1,61 @@
 
     /* NAVBAR */
     #secondnav {
-            display: flex;
-            justify-content: space-between;
-            padding: 5px 20px;
-        }
+      display: flex;
+      justify-content: space-between;
+      padding: 1% 1%;
+  }
 
-        .box {
-            width: 600px;
-            height: 8px;
-            background-color: white;
-            border-radius: 30px;
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            background-color: rgb(226, 229, 233);
-        }
+  .box {
+      width: 45%;
+      height: 8px;
+      background-color: white;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: rgb(226, 229, 233);
+  }
 
-        .box>img {
-            font-size: 20px;
-            width: 27px;
-            padding-right: 10px;
-        }
+  .box>img {
+      font-size: 20px;
+      width: 27px;
+      padding-right: 10px;
+  }
 
-        .box>input {
-            flex: 1;
-            height: 40px;
-            border: none;
-            outline: none;
-            font-size: 18px;
+  .box>input {
+      flex: 1;
+      height: 40px;
+      border: none;
+      outline: none;
+      font-size: 18px;
 
-            background-color: rgb(226, 229, 233);
-        }
+      background-color: rgb(226, 229, 233);
+  }
 
-        .secondbox {
-            width: 265px;
-            background-color: white;
-        }
+  .secondbox {
+      width: 20px;
+      background-color: white;
+  }
 
-        .secondbox:hover {
-            background-color: rgb(226, 229, 233);
-            cursor: pointer;
-        }
+  .secondbox:hover {
+      background-color: rgb(226, 229, 233);
+      cursor: pointer;
+  }
 
-        #thirdnav {
-            padding-left: 150px;
-            margin-top: 20px;
-            display: flex;
-           
-        }
-        #thirdnav h3:hover{
-            cursor: pointer;
-        }
-        #thirdnav h3{
-            margin-right: 40px;
-        }
+  #thirdnav {
+      padding-left: 10%;
+      margin-top: 20px;
+      display: flex;
+     
+  }
+  #thirdnav h3:hover{
+      cursor: pointer;
+  }
+  #thirdnav h3{
+      margin-right: 4%;
+  }
+  
             /* GAMING  */
 
             #gaming-menu{
