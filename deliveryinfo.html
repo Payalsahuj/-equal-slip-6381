@@ -14,18 +14,284 @@
             width: 100%;
             
         }
+        #child{
+            width: 100%;
+            display: flex;
+            margin-top: 20px;
+        }
+        #left{
+            width: 50%;
+            border: 2px solid green;
+            padding: 20px 20px;
+            background-color:#004D40;
+            color: white;
+        }
+        #right{
+            width: 50%;
+            border: 2px solid red;
+            border-color:#004D40;
+            color: #004D40;
+            padding: 20px 20px;
+        }
         #parent{
-            width: 90%;
+            width: 80%;
             margin: auto;
             margin-top: 30px;
+        }
+        #secondnav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1% 1%;
+        }
+
+        .box {
+            width: 45%;
+            height: 8px;
+            background-color: white;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(226, 229, 233);
+        }
+
+        .box>img {
+            font-size: 20px;
+            width: 27px;
+            padding-right: 10px;
+        }
+
+        .box>input {
+            flex: 1;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+
+            background-color: rgb(226, 229, 233);
+        }
+
+        .secondbox {
+            width: 265px;
+            background-color: white;
+        }
+
+        .secondbox:hover {
+            background-color: rgb(226, 229, 233);
+            cursor: pointer;
+        }
+
+        #thirdnav {
+            padding-left: 10%;
+            margin-top: 20px;
+            display: flex; 
+        }
+        #thirdnav h3:hover{
+            cursor: pointer;
+        }
+        #thirdnav h3{
+            margin-right: 4%;
+        }
+
+        #pin,#city,#state,#country{
+            width: 39.5%;
+            height: 25px;
+        }
+        #exp,#cvv{
+            width: 38%;
+            height: 25px;  
+        }
+        input{
+            height: 25px;
+            width: 80%;
+            padding: 5px;
+        }
+        p{
+            margin-top: 10px;
+        }
+        #right {
+           text-align: center;
         }
     </style>
 </head>
 <body>
-    <div id="main"></div>
-    <div id="parent">
-        <h1>Delivery details</h1>
+    <div id="navall">
+        <nav id="secondnav">
+            <img id="menunavimg" src="./image/icons8-menu-rounded-30.png" style="width: 35px; height: 40px; position: fixed;" alt="">
+            <img src="./image/DECOR.png"
+                style="height: 60px; width: 110px; border-radius: 7px; margin-right: 7%; margin-left: 8%;" alt="">
+            <div class="box">
+                <img src="./image/icons8-search-16.png" alt="">
+                <input type="text">
+            </div>
+            
+            <div id="secondbox" class="box secondbox">
+                <img src="./image/icons8-user-male-64.png" alt="">
+                <h3 id="log">Hej! Log in or sign up</h3>
+            </div>
+            
+            <img src="./image/icons8-shuttle-bus-50.png" style="width: 50px; height: 40px; padding-right: 1.5%;" alt="">
+            <img src="./image/icons8-add-to-cart-64.png" style="width: 40px; height: 35px;" alt="">
+        </nav>
+
+        <nav id="thirdnav">
+            <h3 id="product">Products</h3>
+            <h3>Rooms</h3>
+            <h3 >New at L.DECOR</h3>
+            <h3>Offers</h3>
+        </nav>
     </div>
+    <div id="main">
+        <div id="parent">
+            <h2>Delivery details</h2>
+            <div id="child">
+                <div id="left">
+                    <h2>Billing detail</h2>
+                    
+                        <p>First name*</p>
+                        <input id="firstn" type="text" placeholder="firstname">
+                        <p>Last name*</p>
+                        <input id="lastn" type="text" placeholder="lastname">
+                        <p>PAN:</p>
+                        <input id="pan" type="text" placeholder="Pan card no.">
+                        <p>Address*</p>
+                        <input id="address" type="text" placeholder="Address">
+                        <br>
+                       <span style="margin-top: 10px;">
+                        PIN code*
+                       </span>
+                       <span style="margin-left: 99px; margin-top: 10px;">City*</span>
+                       <br>
+                       <input id="pin" type="number" placeholder="PIN code">
+                       <input id="city" type="text" placeholder="City">
+                       <p>State*</p>
+                       <select id="state">
+                        <option value="">Choose your province</option>
+                        <option value="ANDAMAN AND NICOBAR ISLANDS">Andaman and Nicobar Islands</option>
+                        <option value="ANDHRA PRADESH">Andhra Pradesh</option>
+                        <option value="ARUNACHAL PRADESH">Arunachal Pradesh</option>
+                        <option value="ASSAM">Assam</option>
+                        <option value="BIHAR">Bihar</option>
+                        <option value="CHANDIGARH">Chandigarh</option>
+                        <option value="CHHATTISGARH">Chhattisgarh</option>
+                        <option value="DADRA AND NAGAR HAVELI">Dadra and Nagar Haveli</option>
+                        <option value="DAMAN AND DIU">Daman and Diu</option>
+                        <option value="DELHI">Delhi</option>
+                        <option value="GOA">Goa</option>
+                        <option value="GUJARAT">Gujarat</option>
+                        <option value="HARYANA">Haryana</option>
+                        <option value="HIMACHAL PRADESH">Himachal Pradesh</option>
+                        <option value="JAMMU AND KASHMIR">Jammu and Kashmir</option>
+                        <option value="JHARKHAND">Jharkhand</option>
+                        <option value="KARNATAKA">Karnataka</option>
+                        <option value="KERALA">Kerala</option>
+                        <option value="LAKSHADWEEP">Lakshadweep</option>
+                        <option value="MADHYA PRADESH">Madhya Pradesh</option>
+                        <option value="MAHARASHTRA">Maharashtra</option>
+                        <option value="MANIPUR">Manipur</option>
+                        <option value="MEGHALAYA">Meghalaya</option>
+                        <option value="MIZORAM">Mizoram</option>
+                        <option value="NAGALAND">Nagaland</option>
+                        <option value="ODISHA">Odisha</option>
+                        <option value="PUDUCHERRY">Puducherry</option>
+                        <option value="PUNJAB">Punjab</option>
+                        <option value="RAJASTHAN">Rajasthan</option>
+                        <option value="SIKKIM">Sikkim</option>
+                        <option value="TAMIL NADU">Tamil Nadu</option>
+                        <option value="TELANGANA" selected="selected">Telangana</option>
+                        <option value="TRIPURA">Tripura</option>
+                        <option value="UTTAR PRADESH">Uttar Pradesh</option>
+                        <option value="UTTARAKHAND">Uttarakhand</option>
+                        <option value="WEST BENGAL">West Bengal</option>
+                        </select>
+                        <p>Country*</p>
+                        <select name="" id="country">
+                            <option value="India">India</option>
+                        </select>
+                        <p>Email*</p>
+                        <input type="text" id="email" placeholder="Email">
+                        <p>Phone*</p>
+                        <input id="mobile" type="number" placeholder="Phone no.">
+                        <h4 style="margin-top: 10px;">Additional information for delivery:</h4>
+                        <p>Do you live in a house or in an apartment?*</p>
+                        <input type="radio" style="width: 15px;" name="live"><span style="margin-left: 10px;">House</span>
+                        <input type="radio" style="width: 15px;" name="live" ><span style="margin-bottom: 10px;">Apartment</span>
+                        
+                    
+                </div>
+                <div id="right">
+                    <h2>Card detail</h2> 
+                    
+                        <p>Account holder name*</p>
+                        <input type="text" id="name" placeholder="Account holder name">
+                        <p>Card number*</p>
+                        <input type="number" id="cardno" placeholder="Card number">
+                        <br>
+                        <span>CVV*</span>
+                           <span style="margin-left: 190px;">EXPIRY DATE*</span>
+                           <br>
+                           <input type="number" id="cvv" placeholder="CVV">
+                           <input type="text" id="exp" placeholder="MM/YY">   
+                    <br>
+                    <button id="confirm" style="width: 170px; height: 45px; border-radius: 10px; background-color: #004D40; color: white; margin-top: 50px;">Order confirm </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     
 </body>
 </html>
+
+<script>
+
+    let firstname=document.getElementById("firstn");
+    let surname=document.getElementById("lastn");
+    let mobile=document.getElementById("mobile");
+    let city=document.getElementById("city");
+    let state=document.getElementById("state");
+    let pan=document.getElementById("pan");
+    let address=document.getElementById("address");
+    let email=document.getElementById("email");
+    let pin=document.getElementById("pin");
+    let country=document.getElementById("country");
+
+   
+    let pname=document.getElementById("name");
+   
+    let cardno=document.getElementById("cardno");
+   
+    let cvv=document.getElementById("cvv");
+    let exp=document.getElementById("exp");
+    let confirmbtn=document.getElementById("confirm");
+ 
+  
+
+    let orderdata=JSON.parse(localStorage.getItem("orderdata")) || []
+    confirmbtn.addEventListener("click",()=>{
+        
+        let data={
+            firstname:firstname.value,
+            surname:surname.value,
+            mobile:mobile.value,
+            city:city.value,
+            state:state.value,
+            pan:pan.value,
+            address:address.value,
+            email:email.value,
+           pin:pin.value,
+           country:country.value,
+           pname:pname.value,
+           cardno:cardno.value,
+           cvv:cvv.value,
+           exp:exp.value
+        }
+        orderdata.push(data)
+        localStorage.setItem("orderdata",JSON.stringify(orderdata))
+        console.log(orderdata)
+    })
+
+
+   
+</script>
+
