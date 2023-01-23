@@ -6,14 +6,23 @@ L.DECOR
 Team:- Adarsh khatua (IA).
 
 Team member 1:- Firdous Shaikh (Team lead)
+He worked on gaming section of the website, it has sorting, filtering and searching functionality on it.
+
 
 Team member 2:- Payal Sahu.
+She worked on landing page, all admin page and delivery info page of the website. Landing page have slider, show more button and silde menu functions, Admin page have details append functionality of all the products of L.DECOR and delivery info page have functionality of storing all the datas of orders.
+
 
 Team member 3:- Sacchitanand Singh.
+He worked on admin login-signuo and Website login - signup parts. Both the page have functionality  of adding & removing users from the website and also Responsible for making api of login part
+
 
 Team member 4:- Vibha Mudgal.
+She worked on cart section, place order and verifying product page of the website. Verifying page have a functionality of selecting quantity and removing products from the page, card section have add to cart functionality.
+
 
 Team member 5:- Mohammad Umair.
+He worked on Book shelve section of the website, Which is having sorting,filtering and searching functionality on it.
 
 
 L.DECOR Description-
