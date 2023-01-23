@@ -31,7 +31,7 @@ dashboard.addEventListener("click", () => {
                 <!-- No of product -->
                 <div style="background-color: orange;  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Number of Products <span id="noofproduct"></span> </h3><img src="./image/icons8-open-box-50.png" style="width: 150px; height: 115px;" alt=""></div>
                 <!-- variety -->
-                <div style="background-color: rgb(25, 192, 25);  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Total Product 2</h3><img style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt=""></div>
+                <div style="background-color: rgb(25, 192, 25);  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Total Stock 2</h3><img style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt=""></div>
                 <!-- Best sellers  -->
                 <div style="background-color: rgb(234, 145, 78);  display: flex; padding: 20px; align-items: center;"><h3 style="font-size: 35px; color: rgb(128, 130, 132);">Best Sellers <span id="noofbestseller"></span></h3><img style="width: 150px; height: 115px;" src="./image/icons8-product-50.png" alt=""></div>
                 <!--  -->
