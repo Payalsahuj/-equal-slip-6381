@@ -439,6 +439,7 @@ body {
             height: 100%;
             position: fixed;
             left: 0;
+            right: 70%;
             top:0;
             width: 400px;
             background-color:rgb(228, 245, 244) ;
@@ -473,7 +474,7 @@ body {
             height: 100%;
             position: relative;
             position:fixed;
-            left: 25%;
+            left: 26%;
             top:0%;
             width: 400px;
             background-color:rgb(228, 245, 244) ;
