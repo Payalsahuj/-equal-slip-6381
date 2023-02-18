@@ -15,7 +15,9 @@ body {
         body img:hover {
             cursor: pointer;
         }
-
+        #navall{
+            z-index: 2;
+        }
         #secondnav {
             display: flex;
             justify-content: space-between;
@@ -77,6 +79,7 @@ body {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            z-index: 1;
             
         }
         #percentage {
@@ -377,6 +380,7 @@ body {
             text-align: center;
             /* transform: translate(-400px); */
             display: none;
+            z-index: 3;
         }
        
         .menu{
