@@ -125,13 +125,13 @@ body {
         }
         .main-carousal{
             text-align: left;
-           
+           background-color: rgb(234, 229, 229);
             
         }
         .carousel-cell {
             width: 28%;
             height: 20%;
-            margin-right: 5%;
+            
             background: #8C8;
             border-radius: 5px;
             counter-increment: carousel-cell;
@@ -145,14 +145,16 @@ body {
             color: white;
         }
         .cell{
-            position: static;
+            position: static;    
             width: 248px;
-            margin-right: 20px;
+            margin: 0px 5px;
+            background-color: white;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         }
         .cell img{
             display: block;
             width: 100%;
+            padding: 10px 10px;
             
         }
         .celldiv{
