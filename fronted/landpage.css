@@ -446,6 +446,7 @@ body {
             width: 400px;
             background-color:rgb(228, 245, 244) ;
             display: none;
+            z-index: 6;
         }
         
         .menuproduct{
@@ -476,11 +477,12 @@ body {
             height: 100%;
             position: relative;
             position:fixed;
-            left: 26%;
+            left: 23%;
             top:0%;
             width: 400px;
             background-color:rgb(228, 245, 244) ;
             display: none;
+            z-index: 5;
             
         }
         
